@@ -26,7 +26,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
 
       - uses: actions/checkout@v4
 
@@ -43,7 +43,7 @@ jobs:
           auths: |
             github.com:
               user: ${{ github.actor }}
-              token: ${{ secrets.GITHUB_TOKEN }}
+              token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
           run: |
             set -o errexit
             set -o nounset

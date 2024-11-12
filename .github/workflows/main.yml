@@ -1,0 +1,66 @@
+name: Sourcemeta Schemas
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_type }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: read
+      deployments: write
+      contents: write
+    env:
+      KRAFTCLOUD_METRO: was1
+      KRAFTKIT_NO_CHECK_UPDATES: true
+      SERVICE_DOMAIN: schemas.sourcemeta.com
+    steps:
+      - uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+
+      - uses: actions/checkout@v4
+
+      - uses: chrnorm/deployment-action@v2
+        id: deploy-github
+        with:
+          token: '${{ github.token }}'
+          environment-url: https://${{ env.SERVICE_DOMAIN }}
+          environment: production
+
+      - id: deploy
+        uses: unikraft/kraftkit@v0.9.1
+        with:
+          run: |
+            set -o errexit
+            set -o nounset
+            kraft cloud service create --name schemas --domain ${{ env.SERVICE_DOMAIN }} 443:8000 || true
+            kraft cloud deploy --memory 64 --rollout remove --image schemas --service schemas --kraftfile Kraftfile --restart on-failure --replicas 2 .
+            kraft cloud service get schemas
+            kraft cloud instance logs "$(kraft cloud service get schemas --output json | jq --raw-output '.[0].instances | split(" ") | .[0]')"
+            curl --location --fail https://${{ env.SERVICE_DOMAIN }}
+        env:
+          KRAFTCLOUD_TOKEN: ${{ secrets.KRAFTCLOUD_TOKEN }}
+
+      # Update deployment status
+      - if: ${{ steps.deploy.outcome == 'success' }}
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: '${{ github.token }}'
+          environment-url: '${{ steps.deploy-github.outputs.environment_url }}'
+          deployment-id: '${{ steps.deploy-github.outputs.deployment_id }}'
+          state: 'success'
+      - if: ${{ steps.deploy.outcome != 'success' }}
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: '${{ github.token }}'
+          environment-url: '${{ steps.deploy-github.outputs.environment_url }}'
+          deployment-id: '${{ steps.deploy-github.outputs.deployment_id }}'
+          state: 'failure'

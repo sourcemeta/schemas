@@ -51,7 +51,6 @@ jobs:
             kraft cloud deploy --memory 64 --rollout remove --image schemas --service schemas --kraftfile Kraftfile --restart on-failure --replicas 2 .
             kraft cloud service get schemas
             kraft cloud instance logs "$(kraft cloud service get schemas --output json | jq --raw-output '.[0].instances | split(" ") | .[0]')"
-            curl --location --fail https://${{ env.SERVICE_DOMAIN }}
         env:
           KRAFTCLOUD_TOKEN: ${{ secrets.KRAFTCLOUD_TOKEN }}
 

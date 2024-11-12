@@ -22,6 +22,12 @@ jobs:
       KRAFTKIT_NO_CHECK_UPDATES: true
       SERVICE_DOMAIN: schemas.sourcemeta.com
     steps:
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/checkout@v4
 
       - uses: chrnorm/deployment-action@v2

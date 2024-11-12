@@ -40,6 +40,10 @@ jobs:
       - id: deploy
         uses: unikraft/kraftkit@v0.9.1
         with:
+          auths: |
+            github.com:
+              user: ${{ github.actor }}
+              token: ${{ secrets.GITHUB_TOKEN }}
           run: |
             set -o errexit
             set -o nounset

@@ -11,6 +11,8 @@ RUN sourcemeta-registry-index /app/configuration.json /app/index
 FROM scratch
 COPY --from=builder /usr/bin/sourcemeta-registry-server \
   /usr/bin/sourcemeta-registry-server
+COPY --from=builder /usr/share/sourcemeta/registry \
+  /usr/share/sourcemeta/registry
 COPY --from=builder /app/index /app/index
 
 # Linker

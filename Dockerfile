@@ -1,4 +1,4 @@
-FROM ghcr.io/sourcemeta/registry:main AS builder
+FROM ghcr.io/sourcemeta/registry-ee:main AS builder
 COPY configuration.json /app/configuration.json
 COPY vendor /app/vendor
 

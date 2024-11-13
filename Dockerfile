@@ -1,6 +1,11 @@
 FROM ghcr.io/sourcemeta/registry:main AS builder
 COPY configuration.json /app/configuration.json
 COPY vendor /app/vendor
+
+# For debugging purposes
+RUN ldd /usr/bin/sourcemeta-registry-index
+RUN ldd /usr/bin/sourcemeta-registry-server
+
 RUN sourcemeta-registry-index /app/configuration.json /app/index
 
 FROM scratch

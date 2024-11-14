@@ -1,5 +1,7 @@
 {
   "url": "https://schemas.sourcemeta.com",
+  "title": "Sourcemeta",
+  "description": "The universal JSON Schema index, bringing together and supercharging the world's schemas",
   "port": 8000,
   "collections": {
     "nasa/gcn/v4.1.0": {

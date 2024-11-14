@@ -1,4 +1,4 @@
-name: Sourcemeta Schemas
+name: Deploy
 
 on:
   workflow_dispatch:

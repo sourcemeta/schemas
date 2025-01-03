@@ -26,6 +26,13 @@
       "email": "operations@openssf.org",
       "github": "ossf",
       "website": "https://openssf.org"
+    },
+    "krakend": {
+      "title": "KrakenD API Gateway",
+      "description": "An open-source API Gateway that helps you effortlessly adopt microservices and secure communications",
+      "email": "hello@krakend.io",
+      "github": "krakend",
+      "website": "https://www.krakend.io"
     }
   },
   "schemas": {
@@ -36,6 +43,10 @@
     "ossf/osv/v1.6.3": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-6-3"
+    },
+    "krakend": {
+      "base": "https://www.krakend.io/schema",
+      "path": "./vendor/krakend"
     }
   }
 }

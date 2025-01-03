@@ -27,6 +27,9 @@
       "github": "ossf",
       "website": "https://openssf.org"
     },
+    "ossf/osv": {
+      "title": "Open Source Vulnerability schema"
+    },
     "krakend": {
       "title": "KrakenD API Gateway",
       "description": "An open-source API Gateway that helps you effortlessly adopt microservices and secure communications",
@@ -40,9 +43,41 @@
       "base": "https://gcn.nasa.gov/schema/v4.1.0/gcn",
       "path": "./vendor/nasa-gcn-4-1-0"
     },
+    "ossf/osv/v1.6.7": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-7"
+    },
+    "ossf/osv/v1.6.6": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-6"
+    },
+    "ossf/osv/v1.6.5": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-5"
+    },
+    "ossf/osv/v1.6.4": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-4"
+    },
     "ossf/osv/v1.6.3": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-6-3"
+    },
+    "ossf/osv/v1.6.2": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-2"
+    },
+    "ossf/osv/v1.6.1": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-1"
+    },
+    "ossf/osv/v1.6.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-0"
+    },
+    "ossf/osv/v1.5.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-5-0"
     },
     "krakend": {
       "base": "https://www.krakend.io/schema",

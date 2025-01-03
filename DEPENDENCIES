@@ -1,4 +1,12 @@
 vendorpull https://github.com/sourcemeta/vendorpull dea311b5bfb53b6926a4140267959ae334d3ecf4
 nasa-gcn-4-1-0 https://github.com/nasa-gcn/gcn-schema v4.1.0
+osv-schema-1-5-0 https://github.com/ossf/osv-schema v1.5.0
+osv-schema-1-6-0 https://github.com/ossf/osv-schema v1.6.0
+osv-schema-1-6-1 https://github.com/ossf/osv-schema v1.6.1
+osv-schema-1-6-2 https://github.com/ossf/osv-schema v1.6.2
 osv-schema-1-6-3 https://github.com/ossf/osv-schema v1.6.3
+osv-schema-1-6-4 https://github.com/ossf/osv-schema v1.6.4
+osv-schema-1-6-5 https://github.com/ossf/osv-schema v1.6.5
+osv-schema-1-6-6 https://github.com/ossf/osv-schema v1.6.6
+osv-schema-1-6-7 https://github.com/ossf/osv-schema v1.6.7
 krakend https://github.com/krakend/krakend-schema af8e4930cca880ed6956114202a8118d73e1ff2b

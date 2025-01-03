@@ -47,6 +47,15 @@
     "manfred/mac": {
       "title": "Manfred Awesomic CV",
       "description": "A standard open source format to define and share CVs"
+    },
+    "movielabs": {
+      "title": "Motion Picture Laboratories",
+      "description": "A Technology Joint Venture of the Major Hollywood Studios",
+      "github": "movielabs",
+      "website": "https://www.movielabs.com/"
+    },
+    "movielabs/omc": {
+      "title": "The MovieLabs Ontology for Media Creation"
     }
   },
   "schemas": {
@@ -109,6 +118,10 @@
     "krakend": {
       "base": "https://www.krakend.io/schema",
       "path": "./vendor/krakend"
+    },
+    "movielabs/omc": {
+      "base": "https://movielabs.com/omc/json/schema",
+      "path": "./vendor/movielabs-omc-2-6"
     }
   }
 }

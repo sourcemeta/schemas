@@ -6,6 +6,28 @@
   "analytics": {
     "plausible": "schemas.sourcemeta.com"
   },
+  "pages": {
+    "nasa": {
+      "title": "Pioneering Space Exploration and Innovation",
+      "description": "The United States' government agency responsible for leading advancements in space exploration, scientific discovery, and aeronautics research",
+      "github": "nasa",
+      "website": "https://www.nasa.gov"
+    },
+    "nasa/gcn": {
+      "title": "General Coordinates Network",
+      "description": "NASA's Next Generation Time-Domain and Multimessenger Astronomy Alert System",
+      "email": "support@gcn.nasa.gov",
+      "github": "nasa-gcn",
+      "website": "https://gcn.nasa.gov"
+    },
+    "ossf": {
+      "title": "Open Source Security Foundation",
+      "description": "A community of software developers and security engineers who are working together to secure open source software for the greater public good",
+      "email": "operations@openssf.org",
+      "github": "ossf",
+      "website": "https://openssf.org"
+    }
+  },
   "schemas": {
     "nasa/gcn/v4.1.0": {
       "base": "https://gcn.nasa.gov/schema/v4.1.0/gcn",

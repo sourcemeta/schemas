@@ -26,6 +26,13 @@
       "email": "operations@openssf.org",
       "github": "ossf",
       "website": "https://openssf.org"
+    },
+    "asyncapi": {
+      "title": "AsyncAPI Initiative",
+      "description": "Building the future of Event-Driven Architectures (EDA)",
+      "email": "info@asyncapi.io",
+      "github": "asyncapi",
+      "website": "https://www.asyncapi.com"
     }
   },
   "schemas": {
@@ -36,6 +43,10 @@
     "ossf/osv/v1.6.3": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-6-3"
+    },
+    "asyncapi": {
+      "base": "http://asyncapi.com/definitions",
+      "path": "./vendor/asyncapi-schemas"
     }
   }
 }

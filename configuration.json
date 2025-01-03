@@ -3,6 +3,9 @@
   "title": "Sourcemeta",
   "description": "The universal JSON Schema index, bringing together and supercharging the world's schemas",
   "port": 8000,
+  "analytics": {
+    "plausible": "schemas.sourcemeta.com"
+  },
   "collections": {
     "nasa/gcn/v4.1.0": {
       "base": "https://gcn.nasa.gov/schema/v4.1.0/gcn",
@@ -10,7 +13,7 @@
     },
     "ossf/osv/v1.6.3": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
-     "path": "./vendor/osv-schema-1-6-3"
+      "path": "./vendor/osv-schema-1-6-3"
     }
   }
 }

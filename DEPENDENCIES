@@ -9,4 +9,8 @@ osv-schema-1-6-4 https://github.com/ossf/osv-schema v1.6.4
 osv-schema-1-6-5 https://github.com/ossf/osv-schema v1.6.5
 osv-schema-1-6-6 https://github.com/ossf/osv-schema v1.6.6
 osv-schema-1-6-7 https://github.com/ossf/osv-schema v1.6.7
+manfred-mac-0-6 https://github.com/getmanfred/mac v0.6
+manfred-mac-0-5 https://github.com/getmanfred/mac v0.5
+manfred-mac-0-4 https://github.com/getmanfred/mac v0.4
+manfred-mac-0-3 https://github.com/getmanfred/mac v0.3
 krakend https://github.com/krakend/krakend-schema af8e4930cca880ed6956114202a8118d73e1ff2b

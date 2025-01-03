@@ -36,6 +36,17 @@
       "email": "hello@krakend.io",
       "github": "krakend",
       "website": "https://www.krakend.io"
+    },
+    "manfred": {
+      "title": "Manfred",
+      "description": "The Job Platform for those who are not looking for a job",
+      "email": "hello@getmanfred.com",
+      "github": "getmanfred",
+      "website": "https://www.getmanfred.com"
+    },
+    "manfred/mac": {
+      "title": "Manfred Awesomic CV",
+      "description": "A standard open source format to define and share CVs"
     }
   },
   "schemas": {
@@ -78,6 +89,22 @@
     "ossf/osv/v1.5.0": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-5-0"
+    },
+    "manfred/mac/v0.6": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-6"
+    },
+    "manfred/mac/v0.5": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-5"
+    },
+    "manfred/mac/v0.4": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-4"
+    },
+    "manfred/mac/v0.3": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-3"
     },
     "krakend": {
       "base": "https://www.krakend.io/schema",

@@ -6,7 +6,7 @@
   "analytics": {
     "plausible": "schemas.sourcemeta.com"
   },
-  "collections": {
+  "schemas": {
     "nasa/gcn/v4.1.0": {
       "base": "https://gcn.nasa.gov/schema/v4.1.0/gcn",
       "path": "./vendor/nasa-gcn-4-1-0"

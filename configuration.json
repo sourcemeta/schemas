@@ -67,6 +67,10 @@
       "base": "https://gcn.nasa.gov/schema/v4.1.0/gcn",
       "path": "./vendor/nasa-gcn-4-1-0"
     },
+    "nasa/gcn/v4.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v4.0.0/gcn",
+      "path": "./vendor/nasa-gcn-4-0-0"
+    },
     "ossf/osv/v1.6.7": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-6-7"

@@ -71,6 +71,18 @@
       "base": "https://gcn.nasa.gov/schema/v4.0.0/gcn",
       "path": "./vendor/nasa-gcn-4-0-0"
     },
+    "nasa/gcn/v3.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v3.0.0/gcn",
+      "path": "./vendor/nasa-gcn-3-0-0"
+    },
+    "nasa/gcn/v2.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v2.0.0/gcn",
+      "path": "./vendor/nasa-gcn-2-0-0"
+    },
+    "nasa/gcn/v1.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v1.0.0/gcn",
+      "path": "./vendor/nasa-gcn-1-0-0"
+    },
     "ossf/osv/v1.6.7": {
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-6-7"

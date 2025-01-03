@@ -1,4 +1,7 @@
 vendorpull https://github.com/sourcemeta/vendorpull dea311b5bfb53b6926a4140267959ae334d3ecf4
+nasa-gcn-1-0-0 https://github.com/nasa-gcn/gcn-schema v1.0.0
+nasa-gcn-2-0-0 https://github.com/nasa-gcn/gcn-schema v2.0.0
+nasa-gcn-3-0-0 https://github.com/nasa-gcn/gcn-schema v3.0.0
 nasa-gcn-4-0-0 https://github.com/nasa-gcn/gcn-schema v4.0.0
 nasa-gcn-4-1-0 https://github.com/nasa-gcn/gcn-schema v4.1.0
 nasa-gcn-4-2-0 https://github.com/nasa-gcn/gcn-schema v4.2.0

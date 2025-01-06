@@ -149,6 +149,10 @@
       "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
       "path": "./vendor/osv-schema-1-1-0/validation"
     },
+    "ossf/osv/v1.0.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-0-0/validation"
+    },
     "manfred/mac/v0.6": {
       "base": "http://github.com/manfred/mac",
       "path": "./vendor/manfred-mac-0-6"

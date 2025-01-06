@@ -208,6 +208,11 @@
     "cloudevents/v1.0.1": {
       "base": "https://github.com/cloudevents/spec",
       "path": "./vendor/cloudevents-1-0-1"
+    },
+    "cloudevents/v1.0.0": {
+      "base": "https://github.com/cloudevents/spec",
+      "path": "./vendor/cloudevents-1-0-0",
+      "defaultDialect": "https://json-schema.org/draft/2019-09/schema"
     }
   }
 }

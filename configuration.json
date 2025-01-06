@@ -66,6 +66,16 @@
     },
     "octue/power-curve": {
       "title": "Schema related to Wind Turbine Power Curves"
+    },
+    "usnistgov": {
+      "title": "U.S. National Institute of Standards and Technology",
+      "description": "Department of Commerce",
+      "github": "usnistgov",
+      "website": "https://www.nist.gov"
+    },
+    "usnistgov/mgi": {
+      "title": "Materials Genome Initiative",
+      "description": "Community development of JSON schema within materials science and engineering"
     }
   },
   "schemas": {
@@ -180,6 +190,10 @@
     "octue/power-curve/v1.0.0.alpha-1": {
       "base": "https://jsonschema.registry.octue.com/octue/power-curves",
       "path": "./vendor/octue-power-curve/power-curve-schema"
+    },
+    "usnistgov/mgi/2022-08": {
+      "base": "https://github.com/usnistgov/mgi-json-schema",
+      "path": "./vendor/usnistgov-mgi-2022-08"
     }
   }
 }

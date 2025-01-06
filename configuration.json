@@ -82,6 +82,16 @@
       "description": "A specification for describing event data in a common way",
       "github": "cloudevents",
       "website": "https://cloudevents.io"
+    },
+    "riskine": {
+      "title": "Riskine",
+      "description": "To create the customer-centric advisory of the future",
+      "email": "office@riskine.com",
+      "github": "riskine",
+      "website": "https://riskine.com"
+    },
+    "riskine/global-insurance": {
+      "title": "Global Insurance Ontology"
     }
   },
   "schemas": {
@@ -212,6 +222,16 @@
     "cloudevents/v1.0.0": {
       "base": "https://github.com/cloudevents/spec",
       "path": "./vendor/cloudevents-1-0-0",
+      "defaultDialect": "http://json-schema.org/draft-07/schema#"
+    },
+    "riskine/global-insurance/v1.0.0/core": {
+      "base": "https://ontology.riskine.com",
+      "path": "./vendor/riskine-ontology-1-0-0/schemas/core",
+      "defaultDialect": "http://json-schema.org/draft-07/schema#"
+    },
+    "riskine/global-insurance/v1.0.0/products": {
+      "base": "https://ontology.riskine.com",
+      "path": "./vendor/riskine-ontology-1-0-0/schemas/products",
       "defaultDialect": "http://json-schema.org/draft-07/schema#"
     }
   }

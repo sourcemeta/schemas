@@ -76,6 +76,12 @@
     "usnistgov/mgi": {
       "title": "Materials Genome Initiative",
       "description": "Community development of JSON schema within materials science and engineering"
+    },
+    "cloudevents": {
+      "title": "CloudEvents",
+      "description": "A specification for describing event data in a common way",
+      "github": "cloudevents",
+      "website": "https://cloudevents.io"
     }
   },
   "schemas": {
@@ -194,6 +200,10 @@
     "usnistgov/mgi/2022-08": {
       "base": "https://github.com/usnistgov/mgi-json-schema",
       "path": "./vendor/usnistgov-mgi-2022-08"
+    },
+    "cloudevents/v1.0.2": {
+      "base": "https://github.com/cloudevents/spec",
+      "path": "./vendor/cloudevents-1-0-2/cloudevents/formats"
     }
   }
 }

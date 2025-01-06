@@ -56,6 +56,16 @@
     },
     "movielabs/omc": {
       "title": "The MovieLabs Ontology for Media Creation"
+    },
+    "octue": {
+      "title": "Octue",
+      "description": "Software developer for the renewables industry",
+      "email": "tom@octue.com",
+      "github": "octue",
+      "website": "https://www.octue.com"
+    },
+    "octue/power-curve": {
+      "title": "Schema related to Wind Turbine Power Curves"
     }
   },
   "schemas": {
@@ -142,6 +152,10 @@
     "movielabs/omc": {
       "base": "https://movielabs.com/omc/json/schema",
       "path": "./vendor/movielabs-omc-2-6"
+    },
+    "octue/power-curve/v1.0.0.alpha-1": {
+      "base": "https://jsonschema.registry.octue.com/octue/power-curves",
+      "path": "./vendor/octue-power-curve/power-curve-schema"
     }
   }
 }

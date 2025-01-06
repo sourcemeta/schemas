@@ -5,6 +5,7 @@ nasa-gcn-3-0-0 https://github.com/nasa-gcn/gcn-schema v3.0.0
 nasa-gcn-4-0-0 https://github.com/nasa-gcn/gcn-schema v4.0.0
 nasa-gcn-4-1-0 https://github.com/nasa-gcn/gcn-schema v4.1.0
 nasa-gcn-4-2-0 https://github.com/nasa-gcn/gcn-schema v4.2.0
+osv-schema-1-4-0 https://github.com/ossf/osv-schema v1.4.0
 osv-schema-1-5-0 https://github.com/ossf/osv-schema v1.5.0
 osv-schema-1-6-0 https://github.com/ossf/osv-schema v1.6.0
 osv-schema-1-6-1 https://github.com/ossf/osv-schema v1.6.1

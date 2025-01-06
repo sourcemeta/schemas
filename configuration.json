@@ -204,6 +204,10 @@
     "cloudevents/v1.0.2": {
       "base": "https://github.com/cloudevents/spec",
       "path": "./vendor/cloudevents-1-0-2/cloudevents/formats"
+    },
+    "cloudevents/v1.0.1": {
+      "base": "https://github.com/cloudevents/spec",
+      "path": "./vendor/cloudevents-1-0-1"
     }
   }
 }

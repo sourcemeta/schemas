@@ -97,13 +97,6 @@
     },
     "riskine/global-insurance": {
       "title": "Global Insurance Ontology"
-    },
-    "asyncapi": {
-      "title": "AsyncAPI",
-      "description": "Building the future of Event-Driven Architectures (EDA)",
-      "email": "info@asyncapi.io",
-      "github": "asyncapi",
-      "website": "https://www.asyncapi.com"
     }
   },
   "schemas": {
@@ -245,10 +238,6 @@
       "base": "https://ontology.riskine.com",
       "path": "./vendor/riskine-ontology-1-0-0/schemas/products",
       "defaultDialect": "http://json-schema.org/draft-07/schema#"
-    },
-    "asyncapi": {
-      "base": "http://asyncapi.com/definitions",
-      "path": "./vendor/asyncapi"
     }
   }
 }

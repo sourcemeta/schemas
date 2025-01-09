@@ -1,5 +1,4 @@
 bindings/
-common/
 examples/
 extensions/
 migrations/

@@ -22,7 +22,7 @@
       "title": "General Coordinates Network",
       "description": "NASA's Next Generation Time-Domain and Multimessenger Astronomy Alert System",
       "email": "support@gcn.nasa.gov",
-      "github": "nasa-gcn",
+      "github": "nasa-gcn/gcn-schema",
       "website": "https://gcn.nasa.gov"
     },
     "ossf": {
@@ -33,7 +33,8 @@
       "website": "https://openssf.org"
     },
     "ossf/osv": {
-      "title": "Open Source Vulnerability schema"
+      "title": "Open Source Vulnerability schema",
+      "github": "ossf/osv-schema"
     },
     "krakend": {
       "title": "KrakenD API Gateway",
@@ -51,7 +52,8 @@
     },
     "manfred/mac": {
       "title": "Manfred Awesomic CV",
-      "description": "A standard open source format to define and share CVs"
+      "description": "A standard open source format to define and share CVs",
+      "github": "getmanfred/mac"
     },
     "movielabs": {
       "title": "Motion Picture Laboratories",
@@ -60,7 +62,8 @@
       "website": "https://www.movielabs.com/"
     },
     "movielabs/omc": {
-      "title": "The MovieLabs Ontology for Media Creation"
+      "title": "The MovieLabs Ontology for Media Creation",
+      "github": "movielabs/omc"
     },
     "octue": {
       "title": "Octue",
@@ -70,7 +73,8 @@
       "website": "https://www.octue.com"
     },
     "octue/power-curve": {
-      "title": "Schema related to Wind Turbine Power Curves"
+      "title": "Schema related to Wind Turbine Power Curves",
+      "github": "octue/power-curve-schema"
     },
     "usnistgov": {
       "title": "U.S. National Institute of Standards and Technology",
@@ -80,7 +84,8 @@
     },
     "usnistgov/mgi": {
       "title": "Materials Genome Initiative",
-      "description": "Community development of JSON schema within materials science and engineering"
+      "description": "Community development of JSON schema within materials science and engineering",
+      "github": "usnistgov/mgi-json-schema"
     },
     "cloudevents": {
       "title": "CloudEvents",
@@ -96,7 +101,8 @@
       "website": "https://riskine.com"
     },
     "riskine/global-insurance": {
-      "title": "Global Insurance Ontology"
+      "title": "Global Insurance Ontology",
+      "github": "riskine/ontology"
     },
     "jsr": {
       "title": "JSR",

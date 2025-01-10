@@ -32,3 +32,4 @@ cloudevents-1-0-0 https://github.com/cloudevents/spec v1.0
 cloudevents-1-0-1 https://github.com/cloudevents/spec v1.0.1
 cloudevents-1-0-2 https://github.com/cloudevents/spec v1.0.2
 riskine-ontology-1-0-0 https://github.com/riskine/ontology v1.0.0
+jsr https://github.com/jsr-io/jsr 0e218a1d98b52f4c67b99a5c00742ffc3a3dda7d

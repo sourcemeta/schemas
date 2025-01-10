@@ -97,6 +97,13 @@
     },
     "riskine/global-insurance": {
       "title": "Global Insurance Ontology"
+    },
+    "jsr": {
+      "title": "JSR",
+      "description": "The open-source package registry for modern JavaScript and TypeScript",
+      "email": "help@jsr.io",
+      "github": "jsr-io",
+      "website": "https://jsr.io"
     }
   },
   "schemas": {
@@ -238,6 +245,10 @@
       "base": "https://ontology.riskine.com",
       "path": "./vendor/riskine-ontology-1-0-0/schemas/products",
       "defaultDialect": "http://json-schema.org/draft-07/schema#"
+    },
+    "jsr": {
+      "base": "https://jsr.io/schema",
+      "path": "./vendor/jsr"
     }
   }
 }

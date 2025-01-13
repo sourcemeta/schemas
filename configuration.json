@@ -111,6 +111,12 @@
       "email": "help@jsr.io",
       "github": "jsr-io",
       "website": "https://jsr.io"
+    },
+    "jsonschema": {
+      "title": "JSON Schema",
+      "description": "The organisation responsible for the JSON Schema specification",
+      "github": "json-schema-org",
+      "website": "https://json-schema.org"
     }
   },
   "schemas": {
@@ -256,6 +262,10 @@
     "jsr": {
       "base": "https://jsr.io/schema",
       "path": "./vendor/jsr"
+    },
+    "jsonschema/2020-12": {
+      "base": "https://json-schema.org/draft/2020-12",
+      "path": "./vendor/jsonschema-2020-12"
     }
   }
 }

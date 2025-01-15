@@ -277,6 +277,10 @@
     "openapi/v1.2": {
       "base": "https://raw.githubusercontent.com/oai/openapi-specification/master/schemas/v1.2",
       "path": "./vendor/openapi/schemas/v1.2"
+    },
+    "openapi/v2.0": {
+      "base": "http://swagger.io/v2",
+      "path": "./vendor/openapi/schemas/v2.0"
     }
   }
 }

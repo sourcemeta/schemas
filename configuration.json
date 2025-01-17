@@ -278,6 +278,14 @@
       "base": "https://json-schema.org/draft/2019-09",
       "path": "./vendor/jsonschema-2019-09"
     },
+    "jsonschema/draft7": {
+      "base": "http://json-schema.org/draft-07",
+      "path": "./vendor/jsonschema-draft7"
+    },
+    "jsonschema/draft6": {
+      "base": "http://json-schema.org/draft-06",
+      "path": "./vendor/jsonschema-draft6"
+    },
     "openapi/v1.2": {
       "base": "https://raw.githubusercontent.com/oai/openapi-specification/master/schemas/v1.2",
       "path": "./vendor/openapi/schemas/v1.2"

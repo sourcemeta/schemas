@@ -127,6 +127,157 @@
     }
   },
   "schemas": {
+    "nasa/gcn/v4.2.0": {
+      "base": "https://gcn.nasa.gov/schema/v4.2.0/gcn",
+      "path": "./vendor/nasa-gcn-4-2-0"
+    },
+    "nasa/gcn/v4.1.0": {
+      "base": "https://gcn.nasa.gov/schema/v4.1.0/gcn",
+      "path": "./vendor/nasa-gcn-4-1-0"
+    },
+    "nasa/gcn/v4.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v4.0.0/gcn",
+      "path": "./vendor/nasa-gcn-4-0-0"
+    },
+    "nasa/gcn/v3.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v3.0.0/gcn",
+      "path": "./vendor/nasa-gcn-3-0-0"
+    },
+    "nasa/gcn/v2.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v2.0.0/gcn",
+      "path": "./vendor/nasa-gcn-2-0-0"
+    },
+    "nasa/gcn/v1.0.0": {
+      "base": "https://gcn.nasa.gov/schema/v1.0.0/gcn",
+      "path": "./vendor/nasa-gcn-1-0-0"
+    },
+    "ossf/osv/v1.6.7": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-7"
+    },
+    "ossf/osv/v1.6.6": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-6"
+    },
+    "ossf/osv/v1.6.5": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-5"
+    },
+    "ossf/osv/v1.6.4": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-4"
+    },
+    "ossf/osv/v1.6.3": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-3"
+    },
+    "ossf/osv/v1.6.2": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-2"
+    },
+    "ossf/osv/v1.6.1": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-1"
+    },
+    "ossf/osv/v1.6.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-6-0"
+    },
+    "ossf/osv/v1.5.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-5-0"
+    },
+    "ossf/osv/v1.4.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-4-0/validation"
+    },
+    "ossf/osv/v1.3.1": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-3-1/validation"
+    },
+    "ossf/osv/v1.3.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-3-0/validation"
+    },
+    "ossf/osv/v1.2.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-2-0/validation"
+    },
+    "ossf/osv/v1.1.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-1-0/validation"
+    },
+    "ossf/osv/v1.0.0": {
+      "base": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation",
+      "path": "./vendor/osv-schema-1-0-0/validation"
+    },
+    "manfred/mac/v0.6": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-6"
+    },
+    "manfred/mac/v0.5": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-5"
+    },
+    "manfred/mac/v0.4": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-4"
+    },
+    "manfred/mac/v0.3": {
+      "base": "http://github.com/manfred/mac",
+      "path": "./vendor/manfred-mac-0-3"
+    },
+    "krakend": {
+      "base": "https://www.krakend.io/schema",
+      "path": "./vendor/krakend"
+    },
+    "movielabs/omc": {
+      "base": "https://movielabs.com/omc/json/schema",
+      "path": "./vendor/movielabs-omc-2-6"
+    },
+    "octue/power-curve/v1.0.0.alpha-1": {
+      "base": "https://jsonschema.registry.octue.com/octue/power-curves",
+      "path": "./vendor/octue-power-curve/power-curve-schema"
+    },
+    "usnistgov/mgi/2022-08": {
+      "base": "https://github.com/usnistgov/mgi-json-schema",
+      "path": "./vendor/usnistgov-mgi-2022-08"
+    },
+    "cloudevents/v1.0.2": {
+      "base": "https://github.com/cloudevents/spec",
+      "path": "./vendor/cloudevents-1-0-2/cloudevents/formats"
+    },
+    "cloudevents/v1.0.1": {
+      "base": "https://github.com/cloudevents/spec",
+      "path": "./vendor/cloudevents-1-0-1"
+    },
+    "cloudevents/v1.0.0": {
+      "base": "https://github.com/cloudevents/spec",
+      "path": "./vendor/cloudevents-1-0-0",
+      "defaultDialect": "http://json-schema.org/draft-07/schema#"
+    },
+    "riskine/global-insurance/v1.0.0/core": {
+      "base": "https://ontology.riskine.com",
+      "path": "./vendor/riskine-ontology-1-0-0/schemas/core",
+      "defaultDialect": "http://json-schema.org/draft-07/schema#"
+    },
+    "riskine/global-insurance/v1.0.0/products": {
+      "base": "https://ontology.riskine.com",
+      "path": "./vendor/riskine-ontology-1-0-0/schemas/products",
+      "defaultDialect": "http://json-schema.org/draft-07/schema#"
+    },
+    "jsr": {
+      "base": "https://jsr.io/schema",
+      "path": "./vendor/jsr"
+    },
+    "jsonschema/2020-12": {
+      "base": "https://json-schema.org/draft/2020-12",
+      "path": "./vendor/jsonschema-2020-12"
+    },
+    "jsonschema/2019-09": {
+      "base": "https://json-schema.org/draft/2019-09",
+      "path": "./vendor/jsonschema-2019-09"
+    },
     "jsonschema/draft7": {
       "base": "http://json-schema.org/draft-07",
       "path": "./vendor/jsonschema-draft7"

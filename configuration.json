@@ -274,6 +274,10 @@
       "base": "https://json-schema.org/draft/2020-12",
       "path": "./vendor/jsonschema-2020-12"
     },
+    "jsonschema/2019-09": {
+      "base": "https://json-schema.org/draft/2019-09",
+      "path": "./vendor/jsonschema-2019-09"
+    },
     "openapi/v1.2": {
       "base": "https://raw.githubusercontent.com/oai/openapi-specification/master/schemas/v1.2",
       "path": "./vendor/openapi/schemas/v1.2"

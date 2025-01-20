@@ -7,3 +7,5 @@ README.md
 v3.json
 v2.7/krakend.json
 v2.8/krakend.json
+v2.9/krakend.json
+v2.9/_root.json

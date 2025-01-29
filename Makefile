@@ -12,18 +12,17 @@ LDD ?= ldd
 endif
 
 .PHONY: all
-all: dev
+all: prepare index
+	$(REGISTRY)/sourcemeta-registry-server $(OUTPUT)
 
 .PHONY: prepare
 prepare:
-	@echo "Running prepare steps"
 	$(LDD) $(REGISTRY)/sourcemeta-registry-index
 	$(LDD) $(REGISTRY)/sourcemeta-registry-server
 
-.PHONY: dev
-dev: configuration.json prepare
+.PHONY: index
+index: configuration.json
 	$(REGISTRY)/sourcemeta-registry-index $< $(OUTPUT)
-	$(REGISTRY)/sourcemeta-registry-server $(OUTPUT)
 
 .PHONY: clean
 clean:

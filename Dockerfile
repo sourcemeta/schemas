@@ -1,4 +1,5 @@
 FROM ghcr.io/sourcemeta/registry-ee:main AS builder
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt-get --yes update && apt-get install --yes --no-install-recommends make nodejs
 COPY configuration.json /app/configuration.json
 COPY vendor /app/vendor

@@ -124,6 +124,12 @@
       "email": "tsc@openapi.groups.io",
       "github": "oai",
       "website": "https://openapis.org"
+    },
+    "geojson": {
+      "title": "GeoJSON",
+      "description": "A format for encoding a variety of geographic data structures",
+      "github": "geojson",
+      "website": "https://geojson.org"
     }
   },
   "schemas": {
@@ -301,6 +307,10 @@
     "openapi/v3.0": {
       "base": "https://spec.openapis.org/oas/3.0/schema/2021-09-28",
       "path": "./vendor/openapi/schemas/v3.0"
+    },
+    "geojson/v1.0.5": {
+      "base": "https://geojson.org/schema",
+      "path": "./build/geojson-1-0-5"
     }
   }
 }

@@ -39,3 +39,4 @@ jsonschema-draft7 https://github.com/json-schema-org/json-schema-spec 567f768506
 jsonschema-draft6 https://github.com/json-schema-org/json-schema-spec 59ed5f6fc6f6386e23ca51d7f31d7fe9cf696713
 jsonschema-draft4 https://github.com/json-schema-org/json-schema-spec dba92b702c94858162f653590230e7573c8b7dd0
 openapi https://github.com/OAI/OpenAPI-Specification 3.1.1
+geojson-1-0-5 https://github.com/geojson/schema v1.0.5

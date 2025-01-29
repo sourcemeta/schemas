@@ -1,4 +1,7 @@
+NODE ?= node
+MKDIR ?= mkdir
 CMAKE ?= cmake
+
 # For local development, assuming https://github.com/sourcemeta/registry
 # is cloned and built as a sibling directory of this repository
 REGISTRY ?= ../registry/build/dist/bin
@@ -15,8 +18,13 @@ endif
 all: prepare index
 	$(REGISTRY)/sourcemeta-registry-server $(OUTPUT)
 
+$(BUILD)/geojson-1-0-5/%.json: vendor/geojson-1-0-5/bin/format.js vendor/geojson-1-0-5/src/schema/%.js
+	$(MKDIR) -p $(dir $@)
+	$(NODE) $< $(word 2,$^) > $@
+
 .PHONY: prepare
-prepare:
+prepare: \
+	$(patsubst vendor/geojson-1-0-5/src/schema/%.js,$(BUILD)/geojson-1-0-5/%.json,$(wildcard vendor/geojson-1-0-5/src/schema/*.js))
 	$(LDD) $(REGISTRY)/sourcemeta-registry-index
 	$(LDD) $(REGISTRY)/sourcemeta-registry-server
 

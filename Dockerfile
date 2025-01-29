@@ -2,7 +2,7 @@ FROM ghcr.io/sourcemeta/registry-ee:main AS builder
 
 # (1) Install dependencies required for the setup of this specific repository
 RUN apt-get --yes update && apt-get install --yes --no-install-recommends curl ca-certificates
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get --yes update && apt-get install --yes --no-install-recommends make nodejs
 
 # (2) Index the schemas

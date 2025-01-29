@@ -18,13 +18,26 @@ endif
 all: prepare index
 	$(REGISTRY)/sourcemeta-registry-server $(OUTPUT)
 
-$(BUILD)/geojson-1-0-5/%.json: vendor/geojson-1-0-5/bin/format.js vendor/geojson-1-0-5/src/schema/%.js
-	$(MKDIR) -p $(dir $@)
-	$(NODE) $< $(word 2,$^) > $@
+define geojson_prepare
+$(BUILD)/geojson-$(1)/%.json: vendor/geojson-$(1)/bin/format.js vendor/geojson-$(1)/src/schema/%.js
+	$(MKDIR) -p $$(dir $$@) && $(NODE) $$< $$(word 2,$$^) > $$@
+endef
+
+$(eval $(call geojson_prepare,1-0-5))
+$(eval $(call geojson_prepare,1-0-4))
+$(eval $(call geojson_prepare,1-0-3))
+$(eval $(call geojson_prepare,1-0-2))
+$(eval $(call geojson_prepare,1-0-1))
+$(eval $(call geojson_prepare,1-0-0))
 
 .PHONY: prepare
 prepare: \
-	$(patsubst vendor/geojson-1-0-5/src/schema/%.js,$(BUILD)/geojson-1-0-5/%.json,$(wildcard vendor/geojson-1-0-5/src/schema/*.js))
+	$(patsubst vendor/geojson-1-0-5/src/schema/%.js,$(BUILD)/geojson-1-0-5/%.json,$(wildcard vendor/geojson-1-0-5/src/schema/*.js)) \
+	$(patsubst vendor/geojson-1-0-4/src/schema/%.js,$(BUILD)/geojson-1-0-4/%.json,$(wildcard vendor/geojson-1-0-4/src/schema/*.js)) \
+	$(patsubst vendor/geojson-1-0-3/src/schema/%.js,$(BUILD)/geojson-1-0-3/%.json,$(wildcard vendor/geojson-1-0-3/src/schema/*.js)) \
+	$(patsubst vendor/geojson-1-0-2/src/schema/%.js,$(BUILD)/geojson-1-0-2/%.json,$(wildcard vendor/geojson-1-0-2/src/schema/*.js)) \
+	$(patsubst vendor/geojson-1-0-1/src/schema/%.js,$(BUILD)/geojson-1-0-1/%.json,$(wildcard vendor/geojson-1-0-1/src/schema/*.js)) \
+	$(patsubst vendor/geojson-1-0-0/src/schema/%.js,$(BUILD)/geojson-1-0-0/%.json,$(wildcard vendor/geojson-1-0-0/src/schema/*.js))
 	$(LDD) $(REGISTRY)/sourcemeta-registry-index
 	$(LDD) $(REGISTRY)/sourcemeta-registry-server
 

@@ -1,11 +1,8 @@
 FROM ghcr.io/sourcemeta/registry-ee:main AS builder
 COPY configuration.json /app/configuration.json
 COPY vendor /app/vendor
-
-# For debugging purposes
-RUN ldd /usr/bin/sourcemeta-registry-index
-RUN ldd /usr/bin/sourcemeta-registry-server
-
+COPY Makefile /app/Makefile
+RUN make -C /app prepare REGISTRY=/usr/bin
 RUN sourcemeta-registry-index /app/configuration.json /app/index
 
 FROM scratch

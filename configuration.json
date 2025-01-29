@@ -130,6 +130,16 @@
       "description": "A format for encoding a variety of geographic data structures",
       "github": "geojson",
       "website": "https://geojson.org"
+    },
+    "humancellatlas": {
+      "title": "Human Cell Atlas",
+      "description": "An open international collaboration to create comprehensive reference maps of all human cells",
+      "github": "humancellatlas",
+      "website": "https://www.humancellatlas.org/"
+    },
+    "humancellatlas/metadata": {
+      "title": "Human Cell Atlas Metadata Schema",
+      "github": "humancellatlas/metadata-schema"
     }
   },
   "schemas": {
@@ -331,6 +341,10 @@
     "geojson/v1.0.0": {
       "base": "https://geojson.org/schema",
       "path": "./build/geojson-1-0-0"
+    },
+    "humancellatlas/metadata/v5.0.0": {
+      "base": "https://schema.humancellatlas.org",
+      "path": "./vendor/hca-metadata-5-0-0/json_schema"
     }
   }
 }

@@ -160,6 +160,13 @@
       "email": "fhir.github@gmail.com",
       "github": "fhir",
       "website": "https://www.hl7.org/implement/standards/fhir/"
+    },
+    "asyncapi": {
+      "title": "AsyncAPI Initiative",
+      "description": "Building the future of Event-Driven Architectures (EDA)",
+      "email": "info@asyncapi.io",
+      "github": "asyncapi",
+      "website": "https://www.asyncapi.com"
     }
   },
   "schemas": {
@@ -385,6 +392,10 @@
     "hl7/fhir/r3": {
       "base": "http://hl7.org/fhir/json-schema",
       "path": "./vendor/fhir/hl7.fhir.rX/hl7.fhir.r3.core/package/openapi"
+    },
+    "asyncapi/common": {
+      "base": "http://asyncapi.com/definitions",
+      "path": "./vendor/asyncapi/common"
     }
   }
 }

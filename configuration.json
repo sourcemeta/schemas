@@ -167,6 +167,18 @@
       "email": "info@asyncapi.io",
       "github": "asyncapi",
       "website": "https://www.asyncapi.com"
+    },
+    "iptc": {
+      "title": "IPTC",
+      "description": "The global standards body of the news media. We provide the technical foundation for the news ecosystem",
+      "email": "office@iptc.org",
+      "github": "iptc",
+      "website": "https://www.iptc.org"
+    },
+    "iptc/ninjs": {
+      "title": "News in JSON",
+      "description": "A standard the representation of news in JSON",
+      "github": "iptc/newsinjson"
     }
   },
   "schemas": {
@@ -400,6 +412,13 @@
     "asyncapi": {
       "base": "http://asyncapi.com",
       "path": "./vendor/asyncapi"
+    },
+    "iptc/ninjs": {
+      "base": "http://www.iptc.org/std/ninjs",
+      "path": "./vendor/ninjs/specification",
+      "rebase": [
+        { "from": "https://geojson.org/schema", "to": "/geojson/v1.0.5" }
+      ]
     }
   }
 }

@@ -1,4 +1,5 @@
 FROM ghcr.io/sourcemeta/registry-ee:main AS builder
+RUN apt-get --yes update && apt-get install --yes --no-install-recommends make
 COPY configuration.json /app/configuration.json
 COPY vendor /app/vendor
 COPY Makefile /app/Makefile

@@ -146,6 +146,18 @@
       "description": "A data model for describing datasets",
       "github": "datatagsuite",
       "website": "https://datatagsuite.github.io/docs/html"
+    },
+    "hl7": {
+      "title": "Health Level Seven (HL7)",
+      "description": "A range of global standards for the transfer of clinical and administrative health",
+      "website": "https://www.hl7.org"
+    },
+    "hl7/fhir": {
+      "title": "Fast Healthcare Interoperability Resources (FHIR)",
+      "description": "A standard for health care data exchange",
+      "email": "fhir.github@gmail.com",
+      "github": "fhir",
+      "website": "https://www.hl7.org/implement/standards/fhir/"
     }
   },
   "schemas": {
@@ -355,6 +367,14 @@
     "dats/v1.0.0": {
       "base": "https://w3id.org/dats/schema",
       "path": "./vendor/dats-1-0-0"
+    },
+    "hl7/fhir/r5": {
+      "base": "http://hl7.org/fhir/json-schema",
+      "path": "./vendor/fhir/hl7.fhir.rX/hl7.fhir.r5.core/package/openapi"
+    },
+    "hl7/fhir/r4b": {
+      "base": "http://hl7.org/fhir/json-schema",
+      "path": "./vendor/fhir/hl7.fhir.rX/hl7.fhir.r4b.core/package/openapi"
     }
   }
 }

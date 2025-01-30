@@ -396,6 +396,10 @@
     "asyncapi/common": {
       "base": "http://asyncapi.com/definitions",
       "path": "./vendor/asyncapi/common"
+    },
+    "asyncapi/extensions": {
+      "base": "http://asyncapi.com/extensions",
+      "path": "./vendor/asyncapi/extensions"
     }
   }
 }

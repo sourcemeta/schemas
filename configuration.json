@@ -148,8 +148,10 @@
       "website": "https://datatagsuite.github.io/docs/html"
     },
     "hl7": {
-      "title": "Health Level Seven (HL7)",
+      "title": "Health Level Seven International (HL7)",
       "description": "A range of global standards for the transfer of clinical and administrative health",
+      "email": "webmaster@hl7.org",
+      "github": "hl7",
       "website": "https://www.hl7.org"
     },
     "hl7/fhir": {

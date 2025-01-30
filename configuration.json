@@ -140,6 +140,12 @@
     "humancellatlas/metadata": {
       "title": "Human Cell Atlas Metadata Schema",
       "github": "humancellatlas/metadata-schema"
+    },
+    "dats": {
+      "title": "Data Tag Suite (DATS)",
+      "description": "A data model for describing datasets",
+      "github": "datatagsuite",
+      "website": "https://datatagsuite.github.io/docs/html"
     }
   },
   "schemas": {
@@ -345,6 +351,10 @@
     "humancellatlas/metadata/v5.0.0": {
       "base": "https://schema.humancellatlas.org",
       "path": "./vendor/hca-metadata-5-0-0/json_schema"
+    },
+    "dats/v1.0.0": {
+      "base": "https://w3id.org/dats/schema",
+      "path": "./vendor/dats-1-0-0"
     }
   }
 }

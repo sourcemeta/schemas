@@ -21,7 +21,7 @@
             },
             "code": {
               "description": "A code (or set of codes) that specify this medication, or a textual description if no code is available. Usage note: This could be a standard medication code such as a code from RxNorm, SNOMED CT, IDMP etc. It could also be a national or local formulary code, optionally with translations to other code systems.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "status": {
               "description": "A code to indicate if the medication is in active use.",
@@ -34,7 +34,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "isBrand": {
               "description": "Set to true if the item is attributable to a specific manufacturer.",
@@ -42,7 +42,7 @@
             },
             "_isBrand": {
               "description": "Extensions for isBrand",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "isOverTheCounter": {
               "description": "Set to true if the medication can be obtained without an order from a prescriber.",
@@ -50,15 +50,15 @@
             },
             "_isOverTheCounter": {
               "description": "Extensions for isOverTheCounter",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "manufacturer": {
               "description": "Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "form": {
               "description": "Describes the form of the item.  Powder; tablets; capsule.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "ingredient": {
               "description": "Identifies a particular constituent of interest in the product.",
@@ -75,7 +75,7 @@
               "description": "Photo(s) or graphic representation(s) of the medication.",
               "type": "array",
               "items": {
-                "$ref": "Attachment.schema.json#/definitions/Attachment"
+                "$ref": "Attachment#/definitions/Attachment"
               }
             }
           },
@@ -95,11 +95,11 @@
           "properties": {
             "itemCodeableConcept": {
               "description": "The actual ingredient - either a substance (simple ingredient) or another medication.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "itemReference": {
               "description": "The actual ingredient - either a substance (simple ingredient) or another medication.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "isActive": {
               "description": "Indication of whether this ingredient affects the therapeutic action of the drug.",
@@ -107,11 +107,11 @@
             },
             "_isActive": {
               "description": "Extensions for isActive",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "amount": {
               "description": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.",
-              "$ref": "Ratio.schema.json#/definitions/Ratio"
+              "$ref": "Ratio#/definitions/Ratio"
             }
           }
         }
@@ -127,7 +127,7 @@
           "properties": {
             "container": {
               "description": "The kind of container that this package comes as.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "content": {
               "description": "A set of components that go to make up the described item.",
@@ -157,15 +157,15 @@
           "properties": {
             "itemCodeableConcept": {
               "description": "Identifies one of the items in the package.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "itemReference": {
               "description": "Identifies one of the items in the package.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "amount": {
               "description": "The amount of the product that is in the package.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             }
           }
         }
@@ -185,7 +185,7 @@
             },
             "_lotNumber": {
               "description": "Extensions for lotNumber",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "expirationDate": {
               "description": "When this specific batch of product will expire.",
@@ -194,7 +194,7 @@
             },
             "_expirationDate": {
               "description": "Extensions for expirationDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

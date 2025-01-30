@@ -23,7 +23,7 @@
               "description": "The ProcessRequest business identifier.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -33,7 +33,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "action": {
               "description": "The type of processing action being requested, for example Reversal, Readjudication, StatusRequest,PendedRequest.",
@@ -47,11 +47,11 @@
             },
             "_action": {
               "description": "Extensions for action",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "target": {
               "description": "The organization which is the target of the request.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "created": {
               "description": "The date when this resource was created.",
@@ -60,23 +60,23 @@
             },
             "_created": {
               "description": "Extensions for created",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "provider": {
               "description": "The practitioner who is responsible for the action specified in this request.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "organization": {
               "description": "The organization which is responsible for the action speccified in this request.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "request": {
               "description": "Reference of resource which is the target or subject of this action.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "response": {
               "description": "Reference of a prior response to resource which is the target or subject of this action.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "nullify": {
               "description": "If true remove all history excluding audit.",
@@ -84,7 +84,7 @@
             },
             "_nullify": {
               "description": "Extensions for nullify",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reference": {
               "description": "A reference to supply which authenticates the process.",
@@ -92,7 +92,7 @@
             },
             "_reference": {
               "description": "Extensions for reference",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "item": {
               "description": "List of top level items to be re-adjudicated, if none specified then the entire submission is re-adjudicated.",
@@ -112,7 +112,7 @@
               "description": "Extensions for include",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "exclude": {
@@ -126,12 +126,12 @@
               "description": "Extensions for exclude",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "period": {
               "description": "A period of time during which the fulfilling resources would have been created.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           },
           "required": [
@@ -155,7 +155,7 @@
             },
             "_sequenceLinkId": {
               "description": "Extensions for sequenceLinkId",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

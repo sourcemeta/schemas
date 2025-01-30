@@ -23,7 +23,7 @@
               "description": "This records identifiers associated with this care team that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -39,13 +39,13 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "category": {
               "description": "Identifies what kind of team.  This is to support differentiation between multiple co-existing teams, such as care plan team, episode of care team, longitudinal care team.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "name": {
@@ -54,19 +54,19 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "subject": {
               "description": "Identifies the patient or group whose intended care is handled by the team.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "context": {
               "description": "The encounter or episode of care that establishes the context for this care team.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "Indicates when the team did (or is intended to) come into effect and end.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "participant": {
               "description": "Identifies all people and organizations who are expected to be involved in the care team.",
@@ -79,28 +79,28 @@
               "description": "Describes why the care team exists.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "reasonReference": {
               "description": "Condition(s) that this care team addresses.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "managingOrganization": {
               "description": "The organization responsible for the care team.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "note": {
               "description": "Comments made about the CareTeam.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             }
           },
@@ -120,19 +120,19 @@
           "properties": {
             "role": {
               "description": "Indicates specific responsibility of an individual within the care team, such as \"Primary care physician\", \"Trained social worker counselor\", \"Caregiver\", etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "member": {
               "description": "The specific person or organization who is participating/expected to participate in the care team.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onBehalfOf": {
               "description": "The organization of the practitioner.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "Indicates when the specific member or organization did (or is intended to) come into effect and end.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           }
         }

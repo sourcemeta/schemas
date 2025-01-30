@@ -24,7 +24,7 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "The name of the individual or organization responsible for the contribution.",
@@ -32,13 +32,13 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "contact": {
               "description": "Contact details to assist a user in finding and communicating with the contributor.",
               "type": "array",
               "items": {
-                "$ref": "ContactDetail.schema.json#/definitions/ContactDetail"
+                "$ref": "ContactDetail#/definitions/ContactDetail"
               }
             }
           }

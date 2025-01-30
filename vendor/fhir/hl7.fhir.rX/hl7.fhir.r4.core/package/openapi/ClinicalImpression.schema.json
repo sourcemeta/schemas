@@ -23,7 +23,7 @@
               "description": "A unique identifier assigned to the clinical impression that remains consistent regardless of what server the impression is stored on.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -37,11 +37,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "code": {
               "description": "Categorizes the type of clinical assessment performed.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "description": {
               "description": "A summary of the context and/or cause of the assessment - why / where was it performed, and what patient events/status prompted it.",
@@ -49,15 +49,15 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "subject": {
               "description": "The patient or group of individuals assessed as part of this record.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "context": {
               "description": "The encounter or episode of care this impression was created as part of.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "effectiveDateTime": {
               "description": "The point in time or period over which the subject was assessed.",
@@ -66,11 +66,11 @@
             },
             "_effectiveDateTime": {
               "description": "Extensions for effectiveDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "effectivePeriod": {
               "description": "The point in time or period over which the subject was assessed.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "date": {
               "description": "Indicates when the documentation of the assessment was complete.",
@@ -79,21 +79,21 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "assessor": {
               "description": "The clinician performing the assessment.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "previous": {
               "description": "A reference to the last assesment that was conducted bon this patient. Assessments are often/usually ongoing in nature; a care provider (practitioner or team) will make new assessments on an ongoing basis as new data arises or the patient\u0027s conditions changes.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "problem": {
               "description": "This a list of the relevant problems/conditions for a patient.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "investigation": {
@@ -114,7 +114,7 @@
               "description": "Extensions for protocol",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "summary": {
@@ -123,7 +123,7 @@
             },
             "_summary": {
               "description": "Extensions for summary",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "finding": {
               "description": "Specific findings or diagnoses that was considered likely or relevant to ongoing treatment.",
@@ -136,28 +136,28 @@
               "description": "Estimate of likely outcome.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "prognosisReference": {
               "description": "RiskAssessment expressing likely outcome.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "action": {
               "description": "Action taken as part of assessment procedure.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "note": {
               "description": "Commentary about the impression, typically recorded after the impression itself was made, though supplemental notes by the original author could also appear.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             }
           },
@@ -178,13 +178,13 @@
           "properties": {
             "code": {
               "description": "A name/code for the group (\"set\") of investigations. Typically, this will be something like \"signs\", \"symptoms\", \"clinical\", \"diagnostic\", but the list is not constrained, and others such groups such as (exposure|family|travel|nutitirional) history may be used.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "item": {
               "description": "A record of a specific investigation that was undertaken.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -204,11 +204,11 @@
           "properties": {
             "itemCodeableConcept": {
               "description": "Specific text, code or reference for finding or diagnosis, which may include ruled-out or resolved conditions.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "itemReference": {
               "description": "Specific text, code or reference for finding or diagnosis, which may include ruled-out or resolved conditions.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "basis": {
               "description": "Which investigations support finding or diagnosis.",
@@ -216,7 +216,7 @@
             },
             "_basis": {
               "description": "Extensions for basis",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

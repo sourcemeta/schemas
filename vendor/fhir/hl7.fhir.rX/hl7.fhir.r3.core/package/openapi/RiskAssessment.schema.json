@@ -21,15 +21,15 @@
             },
             "identifier": {
               "description": "Business identifier assigned to the risk assessment.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "basedOn": {
               "description": "A reference to the request that is fulfilled by this risk assessment.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "parent": {
               "description": "A reference to a resource that this risk assessment is part of, such as a Procedure.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "status": {
               "description": "The status of the RiskAssessment, using the same statuses as an Observation.",
@@ -38,23 +38,23 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "method": {
               "description": "The algorithm, process or mechanism used to evaluate the risk.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "code": {
               "description": "The type of the risk assessment performed.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subject": {
               "description": "The patient or group the risk assessment applies to.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "context": {
               "description": "The encounter where the assessment was performed.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "occurrenceDateTime": {
               "description": "The date (and possibly time) the risk assessment was performed.",
@@ -63,33 +63,33 @@
             },
             "_occurrenceDateTime": {
               "description": "Extensions for occurrenceDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "occurrencePeriod": {
               "description": "The date (and possibly time) the risk assessment was performed.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "condition": {
               "description": "For assessments or prognosis specific to a particular condition, indicates the condition being assessed.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "performer": {
               "description": "The provider or software application that performed the assessment.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "reasonCodeableConcept": {
               "description": "The reason the risk assessment was performed.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "reasonReference": {
               "description": "The reason the risk assessment was performed.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "basis": {
               "description": "Indicates the source data considered as part of the assessment (FamilyHistory, Observations, Procedures, Conditions, etc.).",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "prediction": {
@@ -105,7 +105,7 @@
             },
             "_mitigation": {
               "description": "Extensions for mitigation",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "comment": {
               "description": "Additional comments about the risk assessment.",
@@ -113,7 +113,7 @@
             },
             "_comment": {
               "description": "Extensions for comment",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [
@@ -132,7 +132,7 @@
           "properties": {
             "outcome": {
               "description": "One of the potential outcomes for the patient (e.g. remission, death,  a particular condition).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "probabilityDecimal": {
               "description": "How likely is the outcome (in the specified timeframe).",
@@ -141,15 +141,15 @@
             },
             "_probabilityDecimal": {
               "description": "Extensions for probabilityDecimal",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "probabilityRange": {
               "description": "How likely is the outcome (in the specified timeframe).",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "qualitativeRisk": {
               "description": "How likely is the outcome (in the specified timeframe), expressed as a qualitative value (e.g. low, medium, high).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "relativeRisk": {
               "description": "Indicates the risk for this particular subject (with their specific characteristics) divided by the risk of the population in general.  (Numbers greater than 1 \u003d higher risk than the population, numbers less than 1 \u003d lower risk.).",
@@ -158,15 +158,15 @@
             },
             "_relativeRisk": {
               "description": "Extensions for relativeRisk",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "whenPeriod": {
               "description": "Indicates the period of time or age range of the subject to which the specified probability applies.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "whenRange": {
               "description": "Indicates the period of time or age range of the subject to which the specified probability applies.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "rationale": {
               "description": "Additional information explaining the basis for the prediction.",
@@ -174,7 +174,7 @@
             },
             "_rationale": {
               "description": "Extensions for rationale",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [

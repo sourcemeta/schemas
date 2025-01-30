@@ -23,7 +23,7 @@
               "description": "The EpisodeOfCare may be known by different identifiers for different contexts of use, such as when an external agency is tracking the Episode for funding purposes.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -41,7 +41,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "statusHistory": {
               "description": "The history of statuses that the EpisodeOfCare has been through (without requiring processing the history of the resource).",
@@ -54,7 +54,7 @@
               "description": "A classification of the type of episode of care; e.g. specialist referral, disease management, type of funded care.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "diagnosis": {
@@ -66,39 +66,39 @@
             },
             "patient": {
               "description": "The patient who is the focus of this episode of care.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "managingOrganization": {
               "description": "The organization that has assumed the specific responsibilities for the specified duration.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "The interval during which the managing organization assumes the defined responsibility.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "referralRequest": {
               "description": "Referral Request(s) that are fulfilled by this EpisodeOfCare, incoming referrals.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "careManager": {
               "description": "The practitioner that is the care manager/care co-ordinator for this patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "team": {
               "description": "The list of practitioners that may be facilitating this episode of care for specific purposes.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "account": {
               "description": "The set of accounts that may be used for billing for this EpisodeOfCare.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -132,11 +132,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "The period during this EpisodeOfCare that the specific status applied.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           },
           "required": [
@@ -155,11 +155,11 @@
           "properties": {
             "condition": {
               "description": "A list of conditions/problems/diagnoses that this episode of care is intended to be providing care for.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "role": {
               "description": "Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge …).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "rank": {
               "description": "Ranking of the diagnosis (for each role type).",
@@ -168,7 +168,7 @@
             },
             "_rank": {
               "description": "Extensions for rank",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [

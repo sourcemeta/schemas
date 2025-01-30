@@ -23,7 +23,7 @@
               "description": "Identifier for the List assigned for business purposes outside the context of FHIR.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -37,7 +37,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "mode": {
               "description": "How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted.",
@@ -50,7 +50,7 @@
             },
             "_mode": {
               "description": "Extensions for mode",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "title": {
               "description": "A label for the list assigned by the author.",
@@ -58,19 +58,19 @@
             },
             "_title": {
               "description": "Extensions for title",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "code": {
               "description": "This code defines the purpose of the list - why it was created.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subject": {
               "description": "The common subject (or patient) of the resources that are in the list, if there is one.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "encounter": {
               "description": "The encounter that is the context in which this list was created.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "date": {
               "description": "The date that the list was prepared.",
@@ -79,21 +79,21 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "source": {
               "description": "The entity responsible for deciding what the contents of the list were. Where the list was created by a human, this is the same as the author of the list.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "orderedBy": {
               "description": "What order applies to the items in the list.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "note": {
               "description": "Comments that apply to the overall list.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             },
             "entry": {
@@ -105,7 +105,7 @@
             },
             "emptyReason": {
               "description": "If the list is empty, why the list is empty.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           },
           "required": [
@@ -124,7 +124,7 @@
           "properties": {
             "flag": {
               "description": "The flag allows the system constructing the list to indicate the role and significance of the item in the list.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "deleted": {
               "description": "True if this item is marked as deleted in the list.",
@@ -132,7 +132,7 @@
             },
             "_deleted": {
               "description": "Extensions for deleted",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "date": {
               "description": "When this item was added to the list.",
@@ -141,11 +141,11 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "item": {
               "description": "A reference to the actual resource from which data was derived.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [

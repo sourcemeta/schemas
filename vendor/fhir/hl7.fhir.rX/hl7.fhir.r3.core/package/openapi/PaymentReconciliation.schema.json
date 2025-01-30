@@ -23,7 +23,7 @@
               "description": "The Response business identifier.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -33,11 +33,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "The period of time for which payments have been gathered into this bulk payment for settlement.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "created": {
               "description": "The date when the enclosed suite of services were performed or completed.",
@@ -46,19 +46,19 @@
             },
             "_created": {
               "description": "Extensions for created",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "organization": {
               "description": "The Insurer who produced this adjudicated response.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "request": {
               "description": "Original request resource reference.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "outcome": {
               "description": "Transaction status: error, complete.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "disposition": {
               "description": "A description of the status of the adjudication.",
@@ -66,15 +66,15 @@
             },
             "_disposition": {
               "description": "Extensions for disposition",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "requestProvider": {
               "description": "The practitioner who is responsible for the services rendered to the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "requestOrganization": {
               "description": "The organization which is responsible for the services rendered to the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "detail": {
               "description": "List of individual settlement amounts and the corresponding transaction.",
@@ -85,11 +85,11 @@
             },
             "form": {
               "description": "The form to be used for printing the content.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "total": {
               "description": "Total payment amount.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             },
             "processNote": {
               "description": "Suite of notes.",
@@ -115,23 +115,23 @@
           "properties": {
             "type": {
               "description": "Code to indicate the nature of the payment, adjustment, funds advance, etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "request": {
               "description": "The claim or financial resource.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "response": {
               "description": "The claim response resource.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "submitter": {
               "description": "The Organization which submitted the claim or financial transaction.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "payee": {
               "description": "The organization which is receiving the payment.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "date": {
               "description": "The date of the invoice or financial resource.",
@@ -140,11 +140,11 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "amount": {
               "description": "Amount paid for this detail.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             }
           },
           "required": [
@@ -163,7 +163,7 @@
           "properties": {
             "type": {
               "description": "The note purpose: Print/Display.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "text": {
               "description": "The note text.",
@@ -171,7 +171,7 @@
             },
             "_text": {
               "description": "Extensions for text",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

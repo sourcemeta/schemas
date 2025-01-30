@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "The identifier(s) of this adverse event that are assigned by business processes and/or used to refer to it when a direct URL reference to the resource itsefl is not appropriate.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "category": {
               "description": "The type of event which is important to characterize what occurred and caused harm to the subject, or had the potential to cause harm to the subject.",
@@ -33,15 +33,15 @@
             },
             "_category": {
               "description": "Extensions for category",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "This element defines the specific type of event that occurred or that was prevented from occurring.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subject": {
               "description": "This subject or group impacted by the event.  With a prospective adverse event, there will be no subject as the adverse event was prevented.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "date": {
               "description": "The date (and perhaps time) when the adverse event occurred.",
@@ -50,34 +50,34 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reaction": {
               "description": "Includes information about the reaction that occurred as a result of exposure to a substance (for example, a drug or a chemical).",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "location": {
               "description": "The information about where the adverse event occurred.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "seriousness": {
               "description": "Describes the seriousness or severity of the adverse event.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "outcome": {
               "description": "Describes the type of outcome from the adverse event.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "recorder": {
               "description": "Information on who recorded the adverse event.  May be the patient or a practitioner.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "eventParticipant": {
               "description": "Parties that may or should contribute or have contributed information to the Act. Such information includes information leading to the decision to perform the Act and how to perform the Act (e.g. consultant), information that the Act itself seeks to reveal (e.g. informant of clinical history), or information about what Act was performed (e.g. informant witness).",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "description": {
               "description": "Describes the adverse event in text.",
@@ -85,7 +85,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "suspectEntity": {
               "description": "Describes the entity that is suspected to have caused the adverse event.",
@@ -98,21 +98,21 @@
               "description": "AdverseEvent.subjectMedicalHistory.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "referenceDocument": {
               "description": "AdverseEvent.referenceDocument.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "study": {
               "description": "AdverseEvent.study.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -132,7 +132,7 @@
           "properties": {
             "instance": {
               "description": "Identifies the actual instance of what caused the adverse event.  May be a substance, medication, medication administration, medication statement or a device.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "causality": {
               "description": "causality1 | causality2.",
@@ -144,11 +144,11 @@
             },
             "_causality": {
               "description": "Extensions for causality",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "causalityAssessment": {
               "description": "assess1 | assess2.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "causalityProductRelatedness": {
               "description": "AdverseEvent.suspectEntity.causalityProductRelatedness.",
@@ -156,19 +156,19 @@
             },
             "_causalityProductRelatedness": {
               "description": "Extensions for causalityProductRelatedness",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "causalityMethod": {
               "description": "method1 | method2.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "causalityAuthor": {
               "description": "AdverseEvent.suspectEntity.causalityAuthor.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "causalityResult": {
               "description": "result1 | result2.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           },
           "required": [

@@ -23,7 +23,7 @@
               "description": "Identifier for a person within a particular scope.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "active": {
@@ -32,28 +32,28 @@
             },
             "_active": {
               "description": "Extensions for active",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "patient": {
               "description": "The patient this person is related to.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "relationship": {
               "description": "The nature of the relationship between a patient and the related person.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "name": {
               "description": "A name associated with the person.",
               "type": "array",
               "items": {
-                "$ref": "HumanName.schema.json#/definitions/HumanName"
+                "$ref": "HumanName#/definitions/HumanName"
               }
             },
             "telecom": {
               "description": "A contact detail for the person, e.g. a telephone number or an email address.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "gender": {
@@ -68,7 +68,7 @@
             },
             "_gender": {
               "description": "Extensions for gender",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "birthDate": {
               "description": "The date on which the related person was born.",
@@ -77,25 +77,25 @@
             },
             "_birthDate": {
               "description": "Extensions for birthDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "address": {
               "description": "Address where the related person can be contacted or visited.",
               "type": "array",
               "items": {
-                "$ref": "Address.schema.json#/definitions/Address"
+                "$ref": "Address#/definitions/Address"
               }
             },
             "photo": {
               "description": "Image of the person.",
               "type": "array",
               "items": {
-                "$ref": "Attachment.schema.json#/definitions/Attachment"
+                "$ref": "Attachment#/definitions/Attachment"
               }
             },
             "period": {
               "description": "The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           },
           "required": [

@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "Business identifier associated with the detected issue record.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "status": {
               "description": "Indicates the status of the detected issue.",
@@ -30,11 +30,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "category": {
               "description": "Identifies the general type of issue identified.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "severity": {
               "description": "Indicates the degree of importance associated with the identified issue based on the potential impact on the patient.",
@@ -47,11 +47,11 @@
             },
             "_severity": {
               "description": "Extensions for severity",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "patient": {
               "description": "Indicates the patient whose record the detected issue is associated with.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "date": {
               "description": "The date or date-time when the detected issue was initially identified.",
@@ -60,17 +60,17 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "author": {
               "description": "Individual or device responsible for the issue being raised.  For example, a decision support application or a pharmacist conducting a medication review.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "implicated": {
               "description": "Indicates the resource representing the current activity or proposed activity that is potentially problematic.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "detail": {
@@ -79,7 +79,7 @@
             },
             "_detail": {
               "description": "Extensions for detail",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reference": {
               "description": "The literature, knowledge-base or similar reference that describes the propensity for the detected issue identified.",
@@ -87,7 +87,7 @@
             },
             "_reference": {
               "description": "Extensions for reference",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "mitigation": {
               "description": "Indicates an action that has been taken or is committed to to reduce or eliminate the likelihood of the risk identified by the detected issue from manifesting.  Can also reflect an observation of known mitigating factors that may reduce/eliminate the need for any action.",
@@ -113,7 +113,7 @@
           "properties": {
             "action": {
               "description": "Describes the action that was taken or the observation that was made that reduces/eliminates the risk associated with the identified issue.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "date": {
               "description": "Indicates when the mitigating action was documented.",
@@ -122,11 +122,11 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "author": {
               "description": "Identifies the practitioner who determined the mitigation and takes responsibility for the mitigation step occurring.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [

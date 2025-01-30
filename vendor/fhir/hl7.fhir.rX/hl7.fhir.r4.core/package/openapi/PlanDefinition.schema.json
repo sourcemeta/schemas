@@ -25,13 +25,13 @@
             },
             "_url": {
               "description": "Extensions for url",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "identifier": {
               "description": "A formal identifier that is used to identify this plan definition when it is represented in other formats, or referenced in a specification, model, design or an instance.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "version": {
@@ -40,7 +40,7 @@
             },
             "_version": {
               "description": "Extensions for version",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "A natural language name identifying the plan definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
@@ -48,7 +48,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "title": {
               "description": "A short, descriptive, user-friendly title for the plan definition.",
@@ -56,11 +56,11 @@
             },
             "_title": {
               "description": "Extensions for title",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "The type of asset the plan definition represents, e.g. an order set, protocol, or event-condition-action rule.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "status": {
               "description": "The status of this plan definition. Enables tracking the life-cycle of the content.",
@@ -74,7 +74,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "experimental": {
               "description": "A boolean value to indicate that this plan definition is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
@@ -82,7 +82,7 @@
             },
             "_experimental": {
               "description": "Extensions for experimental",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "date": {
               "description": "The date  (and optionally time) when the plan definition was published. The date must change if and when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the plan definition changes.",
@@ -91,7 +91,7 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "publisher": {
               "description": "The name of the individual or organization that published the plan definition.",
@@ -99,7 +99,7 @@
             },
             "_publisher": {
               "description": "Extensions for publisher",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "A free text natural language description of the plan definition from a consumer\u0027s perspective.",
@@ -107,7 +107,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "purpose": {
               "description": "Explaination of why this plan definition is needed and why it has been designed as it has.",
@@ -115,7 +115,7 @@
             },
             "_purpose": {
               "description": "Extensions for purpose",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "usage": {
               "description": "A detailed description of how the asset is used from a clinical perspective.",
@@ -123,7 +123,7 @@
             },
             "_usage": {
               "description": "Extensions for usage",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "approvalDate": {
               "description": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
@@ -132,7 +132,7 @@
             },
             "_approvalDate": {
               "description": "Extensions for approvalDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "lastReviewDate": {
               "description": "The date on which the resource content was last reviewed. Review happens periodically after approval, but doesn\u0027t change the original approval date.",
@@ -141,45 +141,45 @@
             },
             "_lastReviewDate": {
               "description": "Extensions for lastReviewDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "effectivePeriod": {
               "description": "The period during which the plan definition content was or is planned to be in active use.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "useContext": {
               "description": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching for appropriate plan definition instances.",
               "type": "array",
               "items": {
-                "$ref": "UsageContext.schema.json#/definitions/UsageContext"
+                "$ref": "UsageContext#/definitions/UsageContext"
               }
             },
             "jurisdiction": {
               "description": "A legal or geographic region in which the plan definition is intended to be used.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "topic": {
               "description": "Descriptive topics related to the content of the plan definition. Topics provide a high-level categorization of the definition that can be useful for filtering and searching.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "contributor": {
               "description": "A contributor to the content of the asset, including authors, editors, reviewers, and endorsers.",
               "type": "array",
               "items": {
-                "$ref": "Contributor.schema.json#/definitions/Contributor"
+                "$ref": "Contributor#/definitions/Contributor"
               }
             },
             "contact": {
               "description": "Contact details to assist a user in finding and communicating with the publisher.",
               "type": "array",
               "items": {
-                "$ref": "ContactDetail.schema.json#/definitions/ContactDetail"
+                "$ref": "ContactDetail#/definitions/ContactDetail"
               }
             },
             "copyright": {
@@ -188,20 +188,20 @@
             },
             "_copyright": {
               "description": "Extensions for copyright",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "relatedArtifact": {
               "description": "Related artifacts such as additional documentation, justification, or bibliographic references.",
               "type": "array",
               "items": {
-                "$ref": "RelatedArtifact.schema.json#/definitions/RelatedArtifact"
+                "$ref": "RelatedArtifact#/definitions/RelatedArtifact"
               }
             },
             "library": {
               "description": "A reference to a Library resource containing any formal logic used by the plan definition.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "goal": {
@@ -235,32 +235,32 @@
           "properties": {
             "category": {
               "description": "Indicates a category the goal falls within.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "description": {
               "description": "Human-readable and/or coded description of a specific desired objective of care, such as \"control blood pressure\" or \"negotiate an obstacle course\" or \"dance with child at wedding\".",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "priority": {
               "description": "Identifies the expected level of importance associated with reaching/sustaining the defined goal.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "start": {
               "description": "The event after which the goal should begin being pursued.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "addresses": {
               "description": "Identifies problems, conditions, issues, or concerns the goal is intended to address.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "documentation": {
               "description": "Didactic or other informational resources associated with the goal that provide further supporting information about the goal. Information resources can include inline text commentary and links to web resources.",
               "type": "array",
               "items": {
-                "$ref": "RelatedArtifact.schema.json#/definitions/RelatedArtifact"
+                "$ref": "RelatedArtifact#/definitions/RelatedArtifact"
               }
             },
             "target": {
@@ -287,23 +287,23 @@
           "properties": {
             "measure": {
               "description": "The parameter whose value is to be tracked, e.g. body weigth, blood pressure, or hemoglobin A1c level.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "detailQuantity": {
               "description": "The target value of the measure to be achieved to signify fulfillment of the goal, e.g. 150 pounds or 7.0%. Either the high or low or both values of the range can be specified. Whan a low value is missing, it indicates that the goal is achieved at any value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any value at or above the low value.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "detailRange": {
               "description": "The target value of the measure to be achieved to signify fulfillment of the goal, e.g. 150 pounds or 7.0%. Either the high or low or both values of the range can be specified. Whan a low value is missing, it indicates that the goal is achieved at any value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any value at or above the low value.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "detailCodeableConcept": {
               "description": "The target value of the measure to be achieved to signify fulfillment of the goal, e.g. 150 pounds or 7.0%. Either the high or low or both values of the range can be specified. Whan a low value is missing, it indicates that the goal is achieved at any value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any value at or above the low value.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "due": {
               "description": "Indicates the timeframe after the start of the goal in which the goal should be met.",
-              "$ref": "Duration.schema.json#/definitions/Duration"
+              "$ref": "Duration#/definitions/Duration"
             }
           }
         }
@@ -323,7 +323,7 @@
             },
             "_label": {
               "description": "Extensions for label",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "title": {
               "description": "The title of the action displayed to a user.",
@@ -331,7 +331,7 @@
             },
             "_title": {
               "description": "Extensions for title",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "A short description of the action used to provide a summary to display to the user.",
@@ -339,7 +339,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "textEquivalent": {
               "description": "A text equivalent of the action to be performed. This provides a human-interpretable description of the action when the definition is consumed by a system that may not be capable of interpreting it dynamically.",
@@ -347,27 +347,27 @@
             },
             "_textEquivalent": {
               "description": "Extensions for textEquivalent",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "code": {
               "description": "A code that provides meaning for the action or action group. For example, a section may have a LOINC code for a the section of a documentation template.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "reason": {
               "description": "A description of why this action is necessary or appropriate.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "documentation": {
               "description": "Didactic or other informational resources associated with the action that can be provided to the CDS recipient. Information resources can include inline text commentary and links to web resources.",
               "type": "array",
               "items": {
-                "$ref": "RelatedArtifact.schema.json#/definitions/RelatedArtifact"
+                "$ref": "RelatedArtifact#/definitions/RelatedArtifact"
               }
             },
             "goalId": {
@@ -382,14 +382,14 @@
               "description": "Extensions for goalId",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "triggerDefinition": {
               "description": "A description of when the action should be triggered.",
               "type": "array",
               "items": {
-                "$ref": "TriggerDefinition.schema.json#/definitions/TriggerDefinition"
+                "$ref": "TriggerDefinition#/definitions/TriggerDefinition"
               }
             },
             "condition": {
@@ -403,14 +403,14 @@
               "description": "Defines input data requirements for the action.",
               "type": "array",
               "items": {
-                "$ref": "DataRequirement.schema.json#/definitions/DataRequirement"
+                "$ref": "DataRequirement#/definitions/DataRequirement"
               }
             },
             "output": {
               "description": "Defines the outputs of the action, if any.",
               "type": "array",
               "items": {
-                "$ref": "DataRequirement.schema.json#/definitions/DataRequirement"
+                "$ref": "DataRequirement#/definitions/DataRequirement"
               }
             },
             "relatedAction": {
@@ -427,23 +427,23 @@
             },
             "_timingDateTime": {
               "description": "Extensions for timingDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "timingPeriod": {
               "description": "An optional value describing when the action should be performed.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "timingDuration": {
               "description": "An optional value describing when the action should be performed.",
-              "$ref": "Duration.schema.json#/definitions/Duration"
+              "$ref": "Duration#/definitions/Duration"
             },
             "timingRange": {
               "description": "An optional value describing when the action should be performed.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "timingTiming": {
               "description": "An optional value describing when the action should be performed.",
-              "$ref": "Timing.schema.json#/definitions/Timing"
+              "$ref": "Timing#/definitions/Timing"
             },
             "participant": {
               "description": "Indicates who should participate in performing the action described.",
@@ -454,7 +454,7 @@
             },
             "type": {
               "description": "The type of action to perform (create, update, remove).",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "groupingBehavior": {
               "description": "Defines the grouping behavior for the action and its children.",
@@ -467,7 +467,7 @@
             },
             "_groupingBehavior": {
               "description": "Extensions for groupingBehavior",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "selectionBehavior": {
               "description": "Defines the selection behavior for the action and its children.",
@@ -483,7 +483,7 @@
             },
             "_selectionBehavior": {
               "description": "Extensions for selectionBehavior",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "requiredBehavior": {
               "description": "Defines the requiredness behavior for the action.",
@@ -496,7 +496,7 @@
             },
             "_requiredBehavior": {
               "description": "Extensions for requiredBehavior",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "precheckBehavior": {
               "description": "Defines whether the action should usually be preselected.",
@@ -508,7 +508,7 @@
             },
             "_precheckBehavior": {
               "description": "Extensions for precheckBehavior",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "cardinalityBehavior": {
               "description": "Defines whether the action can be selected multiple times.",
@@ -520,15 +520,15 @@
             },
             "_cardinalityBehavior": {
               "description": "Extensions for cardinalityBehavior",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "definition": {
               "description": "A reference to an ActivityDefinition that describes the action to be taken in detail, or a PlanDefinition that describes a series of actions to be taken.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "transform": {
               "description": "A reference to a StructureMap resource that defines a transform that can be executed to produce the intent resource using the ActivityDefinition instance as the input.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "dynamicValue": {
               "description": "Customizations that should be applied to the statically defined resource. For example, if the dosage of a medication must be computed based on the patient\u0027s weight, a customization would be used to specify an expression that calculated the weight, and the path on the resource that would contain the result.",
@@ -567,7 +567,7 @@
             },
             "_kind": {
               "description": "Extensions for kind",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "A brief, natural language description of the condition that effectively communicates the intended semantics.",
@@ -575,7 +575,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "language": {
               "description": "The media type of the language for the expression.",
@@ -583,7 +583,7 @@
             },
             "_language": {
               "description": "Extensions for language",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "expression": {
               "description": "An expression that returns true or false, indicating whether or not the condition is satisfied.",
@@ -591,7 +591,7 @@
             },
             "_expression": {
               "description": "Extensions for expression",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }
@@ -612,7 +612,7 @@
             },
             "_actionId": {
               "description": "Extensions for actionId",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "relationship": {
               "description": "The relationship of this action to the related action.",
@@ -631,15 +631,15 @@
             },
             "_relationship": {
               "description": "Extensions for relationship",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "offsetDuration": {
               "description": "A duration or range of durations to apply to the relationship. For example, 30-60 minutes before.",
-              "$ref": "Duration.schema.json#/definitions/Duration"
+              "$ref": "Duration#/definitions/Duration"
             },
             "offsetRange": {
               "description": "A duration or range of durations to apply to the relationship. For example, 30-60 minutes before.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             }
           }
         }
@@ -664,11 +664,11 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "role": {
               "description": "The role the participant should play in performing the described action.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           }
         }
@@ -688,7 +688,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "path": {
               "description": "The path to the element to be customized. This is the path on the resource that will hold the result of the calculation defined by the expression.",
@@ -696,7 +696,7 @@
             },
             "_path": {
               "description": "Extensions for path",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "language": {
               "description": "The media type of the language for the expression.",
@@ -704,7 +704,7 @@
             },
             "_language": {
               "description": "Extensions for language",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "expression": {
               "description": "An expression specifying the value of the customized element.",
@@ -712,7 +712,7 @@
             },
             "_expression": {
               "description": "Extensions for expression",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

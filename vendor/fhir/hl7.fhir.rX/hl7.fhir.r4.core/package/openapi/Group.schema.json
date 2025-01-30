@@ -23,7 +23,7 @@
               "description": "A unique business identifier for this group.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "active": {
@@ -32,7 +32,7 @@
             },
             "_active": {
               "description": "Extensions for active",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "Identifies the broad classification of the kind of resources the group includes.",
@@ -48,7 +48,7 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "actual": {
               "description": "If true, indicates that the resource refers to a specific group of real individuals.  If false, the group defines a set of intended individuals.",
@@ -56,11 +56,11 @@
             },
             "_actual": {
               "description": "Extensions for actual",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "code": {
               "description": "Provides a specific type of resource the group includes; e.g. \"cow\", \"syringe\", etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "name": {
               "description": "A label assigned to the group for human identification and communication.",
@@ -68,7 +68,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "quantity": {
               "description": "A count of the number of resource instances that are part of the group.",
@@ -77,7 +77,7 @@
             },
             "_quantity": {
               "description": "Extensions for quantity",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "characteristic": {
               "description": "Identifies the traits shared by members of the group.",
@@ -110,11 +110,11 @@
           "properties": {
             "code": {
               "description": "A code that identifies the kind of trait being asserted.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "valueCodeableConcept": {
               "description": "The value of the trait that holds (or does not hold - see \u0027exclude\u0027) for members of the group.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "valueBoolean": {
               "description": "The value of the trait that holds (or does not hold - see \u0027exclude\u0027) for members of the group.",
@@ -122,15 +122,15 @@
             },
             "_valueBoolean": {
               "description": "Extensions for valueBoolean",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "valueQuantity": {
               "description": "The value of the trait that holds (or does not hold - see \u0027exclude\u0027) for members of the group.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "valueRange": {
               "description": "The value of the trait that holds (or does not hold - see \u0027exclude\u0027) for members of the group.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "exclude": {
               "description": "If true, indicates the characteristic is one that is NOT held by members of the group.",
@@ -138,11 +138,11 @@
             },
             "_exclude": {
               "description": "Extensions for exclude",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "The period over which the characteristic is tested; e.g. the patient had an operation during the month of June.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           },
           "required": [
@@ -161,11 +161,11 @@
           "properties": {
             "entity": {
               "description": "A reference to the entity that is a member of the group. Must be consistent with Group.type.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "The period that the member was in the group, if known.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "inactive": {
               "description": "A flag to indicate that the member is no longer in the group, but previously may have been a member.",
@@ -173,7 +173,7 @@
             },
             "_inactive": {
               "description": "Extensions for inactive",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [

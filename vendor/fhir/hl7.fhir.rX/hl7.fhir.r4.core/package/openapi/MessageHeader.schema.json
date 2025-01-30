@@ -21,7 +21,7 @@
             },
             "event": {
               "description": "Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification have the system value \"http://hl7.org/fhir/message-events\".",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "destination": {
               "description": "The destination application which the message is intended for.",
@@ -32,11 +32,11 @@
             },
             "receiver": {
               "description": "Allows data conveyed by a message to be addressed to a particular person or department when routing to a specific application isn\u0027t sufficient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "sender": {
               "description": "Identifies the sending system to allow the use of a trust relationship.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "timestamp": {
               "description": "The time that the message was sent.",
@@ -44,15 +44,15 @@
             },
             "_timestamp": {
               "description": "Extensions for timestamp",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "enterer": {
               "description": "The person or device that performed the data entry leading to this message. When there is more than one candidate, pick the most proximal to the message. Can provide other enterers in extensions.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "author": {
               "description": "The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "source": {
               "description": "The source application from which this message originated.",
@@ -60,11 +60,11 @@
             },
             "responsible": {
               "description": "The person or organization that accepts overall responsibility for the contents of the message. The implication is that the message event happened under the policies of the responsible party.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "reason": {
               "description": "Coded indication of the cause for the event - indicates  a reason for the occurrence of the event that is a focus of this message.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "response": {
               "description": "Information about the message that this message is a response to.  Only present if this message is a response.",
@@ -74,7 +74,7 @@
               "description": "The actual data of the message - a reference to the root/focus class of the event.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -100,11 +100,11 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "target": {
               "description": "Identifies the target end system in situations where the initial message transmission is to an intermediary system.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "endpoint": {
               "description": "Indicates where the message should be routed to.",
@@ -112,7 +112,7 @@
             },
             "_endpoint": {
               "description": "Extensions for endpoint",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }
@@ -132,7 +132,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "software": {
               "description": "May include configuration or other information useful in debugging.",
@@ -140,7 +140,7 @@
             },
             "_software": {
               "description": "Extensions for software",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "version": {
               "description": "Can convey versions of multiple systems in situations where a message passes through multiple hands.",
@@ -148,11 +148,11 @@
             },
             "_version": {
               "description": "Extensions for version",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "contact": {
               "description": "An e-mail, phone, website or other contact point to use to resolve issues with message communications.",
-              "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+              "$ref": "ContactPoint#/definitions/ContactPoint"
             },
             "endpoint": {
               "description": "Identifies the routing target to send acknowledgements to.",
@@ -160,7 +160,7 @@
             },
             "_endpoint": {
               "description": "Extensions for endpoint",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }
@@ -181,7 +181,7 @@
             },
             "_identifier": {
               "description": "Extensions for identifier",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "code": {
               "description": "Code that identifies the type of response to the message - whether it was successful or not, and whether it should be resent or not.",
@@ -194,11 +194,11 @@
             },
             "_code": {
               "description": "Extensions for code",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "details": {
               "description": "Full details of any issues found in the message.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }

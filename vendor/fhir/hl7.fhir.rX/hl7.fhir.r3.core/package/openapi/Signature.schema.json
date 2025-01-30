@@ -16,7 +16,7 @@
               "description": "An indication of the reason that the entity signed this document. This may be explicitly included as part of the signature information and can be used when determining accountability for various actions concerning the document.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             },
             "when": {
@@ -25,7 +25,7 @@
             },
             "_when": {
               "description": "Extensions for when",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "whoUri": {
               "description": "A reference to an application-usable description of the identity that signed  (e.g. the signature used their private key).",
@@ -33,11 +33,11 @@
             },
             "_whoUri": {
               "description": "Extensions for whoUri",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "whoReference": {
               "description": "A reference to an application-usable description of the identity that signed  (e.g. the signature used their private key).",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onBehalfOfUri": {
               "description": "A reference to an application-usable description of the identity that is represented by the signature.",
@@ -45,11 +45,11 @@
             },
             "_onBehalfOfUri": {
               "description": "Extensions for onBehalfOfUri",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "onBehalfOfReference": {
               "description": "A reference to an application-usable description of the identity that is represented by the signature.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "contentType": {
               "description": "A mime type that indicates the technical format of the signature. Important mime types are application/signature+xml for X ML DigSig, application/jwt for JWT, and image/* for a graphical image of a signature, etc.",
@@ -58,7 +58,7 @@
             },
             "_contentType": {
               "description": "Extensions for contentType",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "blob": {
               "description": "The base64 encoding of the Signature content. When signature is not recorded electronically this element would be empty.",
@@ -66,7 +66,7 @@
             },
             "_blob": {
               "description": "Extensions for blob",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [

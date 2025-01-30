@@ -23,7 +23,7 @@
               "description": "An external identifier for this statement such as an IRI.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -40,23 +40,23 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "subject": {
               "description": "The patient who used the device.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "whenUsed": {
               "description": "The time period over which the device was used.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "timingTiming": {
               "description": "How often the device was used.",
-              "$ref": "Timing.schema.json#/definitions/Timing"
+              "$ref": "Timing#/definitions/Timing"
             },
             "timingPeriod": {
               "description": "How often the device was used.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "timingDateTime": {
               "description": "How often the device was used.",
@@ -65,7 +65,7 @@
             },
             "_timingDateTime": {
               "description": "Extensions for timingDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "recordedOn": {
               "description": "The time at which the statement was made/recorded.",
@@ -74,32 +74,32 @@
             },
             "_recordedOn": {
               "description": "Extensions for recordedOn",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "source": {
               "description": "Who reported the device was being used by the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "device": {
               "description": "The details of the device used.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "indication": {
               "description": "Reason or justification for the use of the device.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "bodySite": {
               "description": "Indicates the site on the subject\u0027s body where the device was used ( i.e. the target site).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "note": {
               "description": "Details about the device statement that were not represented at all or sufficiently in one of the attributes provided in a class. These may include for example a comment, an instruction, or a note associated with the statement.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             }
           },

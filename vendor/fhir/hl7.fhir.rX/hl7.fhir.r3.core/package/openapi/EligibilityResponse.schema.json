@@ -23,7 +23,7 @@
               "description": "The Response business identifier.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -33,7 +33,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "created": {
               "description": "The date when the enclosed suite of services were performed or completed.",
@@ -42,23 +42,23 @@
             },
             "_created": {
               "description": "Extensions for created",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "requestProvider": {
               "description": "The practitioner who is responsible for the services rendered to the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "requestOrganization": {
               "description": "The organization which is responsible for the services rendered to the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "request": {
               "description": "Original request resource reference.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "outcome": {
               "description": "Transaction status: error, complete.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "disposition": {
               "description": "A description of the status of the adjudication.",
@@ -66,11 +66,11 @@
             },
             "_disposition": {
               "description": "Extensions for disposition",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "insurer": {
               "description": "The Insurer who produced this adjudicated response.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "inforce": {
               "description": "Flag indicating if the coverage provided is inforce currently  if no service date(s) specified or for the whole duration of the service dates.",
@@ -78,7 +78,7 @@
             },
             "_inforce": {
               "description": "Extensions for inforce",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "insurance": {
               "description": "The insurer may provide both the details for the requested coverage as well as details for additional coverages known to the insurer.",
@@ -89,7 +89,7 @@
             },
             "form": {
               "description": "The form to be used for printing the content.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "error": {
               "description": "Mutually exclusive with Services Provided (Item).",
@@ -115,11 +115,11 @@
           "properties": {
             "coverage": {
               "description": "A suite of updated or additional Coverages from the Insurer.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "contract": {
               "description": "The contract resource which may provide more detailed information.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "benefitBalance": {
               "description": "Benefits and optionally current balances by Category.",
@@ -142,11 +142,11 @@
           "properties": {
             "category": {
               "description": "Dental, Vision, Medical, Pharmacy, Rehab etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subCategory": {
               "description": "Dental: basic, major, ortho; Vision exam, glasses, contacts; etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "excluded": {
               "description": "True if the indicated class of service is excluded from the plan, missing or False indicated the service is included in the coverage.",
@@ -154,7 +154,7 @@
             },
             "_excluded": {
               "description": "Extensions for excluded",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "A short name or tag for the benefit, for example MED01, or DENT2.",
@@ -162,7 +162,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "A richer description of the benefit, for example \u0027DENT2 covers 100% of basic, 50% of major but exclused Ortho, Implants and Costmetic services\u0027.",
@@ -170,19 +170,19 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "network": {
               "description": "Network designation.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "unit": {
               "description": "Unit designation: individual or family.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "term": {
               "description": "The term or period of the values such as \u0027maximum lifetime benefit\u0027 or \u0027maximum annual vistis\u0027.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "financial": {
               "description": "Benefits Used to date.",
@@ -208,7 +208,7 @@
           "properties": {
             "type": {
               "description": "Deductable, visits, benefit amount.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "allowedUnsignedInt": {
               "description": "Benefits allowed.",
@@ -217,7 +217,7 @@
             },
             "_allowedUnsignedInt": {
               "description": "Extensions for allowedUnsignedInt",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "allowedString": {
               "description": "Benefits allowed.",
@@ -225,11 +225,11 @@
             },
             "_allowedString": {
               "description": "Extensions for allowedString",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "allowedMoney": {
               "description": "Benefits allowed.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             },
             "usedUnsignedInt": {
               "description": "Benefits used.",
@@ -238,11 +238,11 @@
             },
             "_usedUnsignedInt": {
               "description": "Extensions for usedUnsignedInt",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "usedMoney": {
               "description": "Benefits used.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             }
           },
           "required": [
@@ -261,7 +261,7 @@
           "properties": {
             "code": {
               "description": "An error code,from a specified code system, which details why the eligibility check could not be performed.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           },
           "required": [

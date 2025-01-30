@@ -23,21 +23,21 @@
               "description": "External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource.  The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event.  Particularly important if these records have to be updated.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "definition": {
               "description": "A protocol, guideline, orderset or other definition that was adhered to in whole or in part by this event.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "partOf": {
               "description": "A larger event of which this particular event is a component or step.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "status": {
@@ -54,33 +54,33 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "category": {
               "description": "Indicates the type of medication administration and where the medication is expected to be consumed or administered.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "medicationCodeableConcept": {
               "description": "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "medicationReference": {
               "description": "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "subject": {
               "description": "The person or animal or group receiving the medication.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "context": {
               "description": "The visit, admission or other contact between patient and health care provider the medication administration was performed as part of.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "supportingInformation": {
               "description": "Additional information (for example, patient height and weight) that supports the administration of the medication.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "effectiveDateTime": {
@@ -90,11 +90,11 @@
             },
             "_effectiveDateTime": {
               "description": "Extensions for effectiveDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "effectivePeriod": {
               "description": "A specific date/time or interval of time during which the administration took place (or did not take place, when the \u0027notGiven\u0027 attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "performer": {
               "description": "The individual who was responsible for giving the medication to the patient.",
@@ -109,45 +109,45 @@
             },
             "_notGiven": {
               "description": "Extensions for notGiven",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reasonNotGiven": {
               "description": "A code indicating why the administration was not performed.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "reasonCode": {
               "description": "A code indicating why the medication was given.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "reasonReference": {
               "description": "Condition or observation that supports why the medication was administered.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "prescription": {
               "description": "The original request, instruction or authority to perform the administration.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "device": {
               "description": "The device used in administering the medication to the patient.  For example, a particular infusion pump.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "note": {
               "description": "Extra information about the medication administration that is not conveyed by the other attributes.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             },
             "dosage": {
@@ -158,7 +158,7 @@
               "description": "A summary of the events of interest that have occurred, such as when the administration was verified.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -179,11 +179,11 @@
           "properties": {
             "actor": {
               "description": "The device, practitioner, etc. who performed the action.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onBehalfOf": {
               "description": "The organization the device or practitioner was acting on behalf of.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [
@@ -206,31 +206,31 @@
             },
             "_text": {
               "description": "Extensions for text",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "site": {
               "description": "A coded specification of the anatomic site where the medication first entered the body.  For example, \"left arm\".",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "route": {
               "description": "A code specifying the route or physiological path of administration of a therapeutic agent into or onto the patient.  For example, topical, intravenous, etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "method": {
               "description": "A coded value indicating the method by which the medication is intended to be or was introduced into or on the body.  This attribute will most often NOT be populated.  It is most commonly used for injections.  For example, Slow Push, Deep IV.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "dose": {
               "description": "The amount of the medication given at one administration event.   Use this value when the administration is essentially an instantaneous event such as a swallowing a tablet or giving an injection.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "rateRatio": {
               "description": "Identifies the speed with which the medication was or will be introduced into the patient.  Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.  Other examples:  200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.",
-              "$ref": "Ratio.schema.json#/definitions/Ratio"
+              "$ref": "Ratio#/definitions/Ratio"
             },
             "rateSimpleQuantity": {
               "description": "Identifies the speed with which the medication was or will be introduced into the patient.  Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.  Other examples:  200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             }
           }
         }

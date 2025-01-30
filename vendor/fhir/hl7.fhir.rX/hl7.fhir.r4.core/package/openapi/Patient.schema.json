@@ -23,7 +23,7 @@
               "description": "An identifier for this patient.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "active": {
@@ -32,20 +32,20 @@
             },
             "_active": {
               "description": "Extensions for active",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "A name associated with the individual.",
               "type": "array",
               "items": {
-                "$ref": "HumanName.schema.json#/definitions/HumanName"
+                "$ref": "HumanName#/definitions/HumanName"
               }
             },
             "telecom": {
               "description": "A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "gender": {
@@ -60,7 +60,7 @@
             },
             "_gender": {
               "description": "Extensions for gender",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "birthDate": {
               "description": "The date of birth for the individual.",
@@ -69,7 +69,7 @@
             },
             "_birthDate": {
               "description": "Extensions for birthDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "deceasedBoolean": {
               "description": "Indicates if the individual is deceased or not.",
@@ -77,7 +77,7 @@
             },
             "_deceasedBoolean": {
               "description": "Extensions for deceasedBoolean",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "deceasedDateTime": {
               "description": "Indicates if the individual is deceased or not.",
@@ -86,18 +86,18 @@
             },
             "_deceasedDateTime": {
               "description": "Extensions for deceasedDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "address": {
               "description": "Addresses for the individual.",
               "type": "array",
               "items": {
-                "$ref": "Address.schema.json#/definitions/Address"
+                "$ref": "Address#/definitions/Address"
               }
             },
             "maritalStatus": {
               "description": "This field contains a patient\u0027s most recent marital (civil) status.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "multipleBirthBoolean": {
               "description": "Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer).",
@@ -105,7 +105,7 @@
             },
             "_multipleBirthBoolean": {
               "description": "Extensions for multipleBirthBoolean",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "multipleBirthInteger": {
               "description": "Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer).",
@@ -114,13 +114,13 @@
             },
             "_multipleBirthInteger": {
               "description": "Extensions for multipleBirthInteger",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "photo": {
               "description": "Image of the patient.",
               "type": "array",
               "items": {
-                "$ref": "Attachment.schema.json#/definitions/Attachment"
+                "$ref": "Attachment#/definitions/Attachment"
               }
             },
             "contact": {
@@ -145,12 +145,12 @@
               "description": "Patient\u0027s nominated care provider.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "managingOrganization": {
               "description": "Organization that is the custodian of the patient record.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "link": {
               "description": "Link to another patient resource that concerns the same actual patient.",
@@ -178,23 +178,23 @@
               "description": "The nature of the relationship between the patient and the contact person.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "name": {
               "description": "A name associated with the contact person.",
-              "$ref": "HumanName.schema.json#/definitions/HumanName"
+              "$ref": "HumanName#/definitions/HumanName"
             },
             "telecom": {
               "description": "A contact detail for the person, e.g. a telephone number or an email address.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "address": {
               "description": "Address for the contact person.",
-              "$ref": "Address.schema.json#/definitions/Address"
+              "$ref": "Address#/definitions/Address"
             },
             "gender": {
               "description": "Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.",
@@ -208,15 +208,15 @@
             },
             "_gender": {
               "description": "Extensions for gender",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "organization": {
               "description": "Organization on behalf of which the contact is acting or for which the contact is working.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "The period during which this contact person or organization is valid to be contacted relating to this patient.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           }
         }
@@ -232,15 +232,15 @@
           "properties": {
             "species": {
               "description": "Identifies the high level taxonomic categorization of the kind of animal.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "breed": {
               "description": "Identifies the detailed categorization of the kind of animal.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "genderStatus": {
               "description": "Indicates the current state of the animal\u0027s reproductive organs.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           },
           "required": [
@@ -259,7 +259,7 @@
           "properties": {
             "language": {
               "description": "The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. \"en\" for English, or \"en-US\" for American English versus \"en-EN\" for England English.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "preferred": {
               "description": "Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).",
@@ -267,7 +267,7 @@
             },
             "_preferred": {
               "description": "Extensions for preferred",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [
@@ -286,7 +286,7 @@
           "properties": {
             "other": {
               "description": "The other patient resource that the link refers to.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "type": {
               "description": "The type of link between this patient resource and another patient resource.",
@@ -300,7 +300,7 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [

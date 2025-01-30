@@ -21,13 +21,13 @@
             },
             "type": {
               "description": "Identifier for a family of the event.  For example, a menu item, program, rule, policy, function code, application name or URL. It identifies the performed function.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "subtype": {
               "description": "Identifier for the category of event.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             },
             "action": {
@@ -43,7 +43,7 @@
             },
             "_action": {
               "description": "Extensions for action",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "recorded": {
               "description": "The time when the event occurred on the source.",
@@ -51,7 +51,7 @@
             },
             "_recorded": {
               "description": "Extensions for recorded",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "outcome": {
               "description": "Indicates whether the event succeeded or failed.",
@@ -65,7 +65,7 @@
             },
             "_outcome": {
               "description": "Extensions for outcome",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "outcomeDesc": {
               "description": "A free text description of the outcome of the event.",
@@ -73,13 +73,13 @@
             },
             "_outcomeDesc": {
               "description": "Extensions for outcomeDesc",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "purposeOfEvent": {
               "description": "The purposeOfUse (reason) that was used during the event being recorded.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "agent": {
@@ -122,16 +122,16 @@
               "description": "The security role that the user was acting under, that come from local codes defined by the access control security system (e.g. RBAC, ABAC) used in the local context.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "reference": {
               "description": "Direct reference to a resource that identifies the agent.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "userId": {
               "description": "Unique identifier for the user actively participating in the event.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "altId": {
               "description": "Alternative agent Identifier. For a human, this should be a user identifier text string from authentication system. This identifier would be one known to a common authentication system (e.g. single sign-on), if available.",
@@ -139,7 +139,7 @@
             },
             "_altId": {
               "description": "Extensions for altId",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "Human-meaningful name for the agent.",
@@ -147,7 +147,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "requestor": {
               "description": "Indicator that the user is or is not the requestor, or initiator, for the event being audited.",
@@ -155,11 +155,11 @@
             },
             "_requestor": {
               "description": "Extensions for requestor",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "location": {
               "description": "Where the event occurred.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "policy": {
               "description": "The policy or plan that authorized the activity being recorded. Typically, a single activity may have multiple applicable policies, such as patient consent, guarantor funding, etc. The policy would also indicate the security token used.",
@@ -172,12 +172,12 @@
               "description": "Extensions for policy",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "media": {
               "description": "Type of media involved. Used when the event is about exporting/importing onto media.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "network": {
               "description": "Logical network location for application activity, if the activity has a network location.",
@@ -187,7 +187,7 @@
               "description": "The reason (purpose of use), specific to this agent, that was used during the event being recorded.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             }
           }
@@ -208,7 +208,7 @@
             },
             "_address": {
               "description": "Extensions for address",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "An identifier for the type of network access point that originated the audit event.",
@@ -223,7 +223,7 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }
@@ -243,17 +243,17 @@
             },
             "_site": {
               "description": "Extensions for site",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "identifier": {
               "description": "Identifier of the source where the event was detected.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "type": {
               "description": "Code specifying the type of source where event originated.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             }
           },
@@ -273,29 +273,29 @@
           "properties": {
             "identifier": {
               "description": "Identifies a specific instance of the entity. The reference should always be version specific.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "reference": {
               "description": "Identifies a specific instance of the entity. The reference should be version specific.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "type": {
               "description": "The type of the object that was involved in this audit event.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "role": {
               "description": "Code representing the role the entity played in the event being audited.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "lifecycle": {
               "description": "Identifier for the data life-cycle stage for the entity.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "securityLabel": {
               "description": "Security labels for the identified entity.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             },
             "name": {
@@ -304,7 +304,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "Text that describes the entity in more detail.",
@@ -312,7 +312,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "query": {
               "description": "The query parameters for a query-type entities.",
@@ -320,7 +320,7 @@
             },
             "_query": {
               "description": "Extensions for query",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "detail": {
               "description": "Tagged value pairs for conveying additional information about the entity.",
@@ -347,7 +347,7 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "value": {
               "description": "The details, base64 encoded. Used to carry bulk information.",
@@ -355,7 +355,7 @@
             },
             "_value": {
               "description": "Extensions for value",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

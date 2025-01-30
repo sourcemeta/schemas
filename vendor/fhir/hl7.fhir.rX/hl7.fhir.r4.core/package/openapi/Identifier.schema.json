@@ -24,11 +24,11 @@
             },
             "_use": {
               "description": "Extensions for use",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "system": {
               "description": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -36,7 +36,7 @@
             },
             "_system": {
               "description": "Extensions for system",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "value": {
               "description": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -44,15 +44,15 @@
             },
             "_value": {
               "description": "Extensions for value",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "Time period during which identifier is/was valid for use.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "assigner": {
               "description": "Organization that issued/manages the identifier.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }

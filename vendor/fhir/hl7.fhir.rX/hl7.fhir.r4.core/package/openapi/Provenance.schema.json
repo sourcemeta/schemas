@@ -23,12 +23,12 @@
               "description": "The Reference(s) that were generated or updated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "period": {
               "description": "The period during which the activity occurred.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "recorded": {
               "description": "The instant of time at which the activity was recorded.",
@@ -36,7 +36,7 @@
             },
             "_recorded": {
               "description": "Extensions for recorded",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "policy": {
               "description": "Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc.",
@@ -49,23 +49,23 @@
               "description": "Extensions for policy",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "location": {
               "description": "Where the activity occurred, if relevant.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "reason": {
               "description": "The reason that the activity was taking place.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             },
             "activity": {
               "description": "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "agent": {
               "description": "An actor taking a role in an activity  for which it can be assigned some degree of responsibility for the activity taking place.",
@@ -85,7 +85,7 @@
               "description": "A digital signature on the target Reference(s). The signer should match a Provenance.agent. The purpose of the signature is indicated.",
               "type": "array",
               "items": {
-                "$ref": "Signature.schema.json#/definitions/Signature"
+                "$ref": "Signature#/definitions/Signature"
               }
             }
           },
@@ -109,7 +109,7 @@
               "description": "The function of the agent with respect to the activity. The security role enabling the agent with respect to the activity.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "whoUri": {
@@ -118,11 +118,11 @@
             },
             "_whoUri": {
               "description": "Extensions for whoUri",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "whoReference": {
               "description": "The individual, device or organization that participated in the event.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onBehalfOfUri": {
               "description": "The individual, device, or organization for whom the change was made.",
@@ -130,15 +130,15 @@
             },
             "_onBehalfOfUri": {
               "description": "Extensions for onBehalfOfUri",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "onBehalfOfReference": {
               "description": "The individual, device, or organization for whom the change was made.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "relatedAgentType": {
               "description": "The type of relationship between agents.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           }
         }
@@ -165,7 +165,7 @@
             },
             "_role": {
               "description": "Extensions for role",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "whatUri": {
               "description": "Identity of the  Entity used. May be a logical or physical uri and maybe absolute or relative.",
@@ -173,15 +173,15 @@
             },
             "_whatUri": {
               "description": "Extensions for whatUri",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "whatReference": {
               "description": "Identity of the  Entity used. May be a logical or physical uri and maybe absolute or relative.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "whatIdentifier": {
               "description": "Identity of the  Entity used. May be a logical or physical uri and maybe absolute or relative.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "agent": {
               "description": "The entity is attributed to an agent to express the agent\u0027s responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity.",

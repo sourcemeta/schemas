@@ -19,7 +19,7 @@
             },
             "_sequence": {
               "description": "Extensions for sequence",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "text": {
               "description": "Free text dosage instructions e.g. SIG.",
@@ -27,13 +27,13 @@
             },
             "_text": {
               "description": "Extensions for text",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "additionalInstruction": {
               "description": "Supplemental instruction - e.g. \"with meals\".",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "patientInstruction": {
@@ -42,11 +42,11 @@
             },
             "_patientInstruction": {
               "description": "Extensions for patientInstruction",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "timing": {
               "description": "When medication should be administered.",
-              "$ref": "Timing.schema.json#/definitions/Timing"
+              "$ref": "Timing#/definitions/Timing"
             },
             "asNeededBoolean": {
               "description": "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).",
@@ -54,55 +54,55 @@
             },
             "_asNeededBoolean": {
               "description": "Extensions for asNeededBoolean",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "asNeededCodeableConcept": {
               "description": "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "site": {
               "description": "Body site to administer to.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "route": {
               "description": "How drug should enter body.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "method": {
               "description": "Technique for administering medication.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "doseRange": {
               "description": "Amount of medication per dose.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "doseSimpleQuantity": {
               "description": "Amount of medication per dose.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "maxDosePerPeriod": {
               "description": "Upper limit on medication per unit of time.",
-              "$ref": "Ratio.schema.json#/definitions/Ratio"
+              "$ref": "Ratio#/definitions/Ratio"
             },
             "maxDosePerAdministration": {
               "description": "Upper limit on medication per administration.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "maxDosePerLifetime": {
               "description": "Upper limit on medication per lifetime of the patient.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "rateRatio": {
               "description": "Amount of medication per unit of time.",
-              "$ref": "Ratio.schema.json#/definitions/Ratio"
+              "$ref": "Ratio#/definitions/Ratio"
             },
             "rateRange": {
               "description": "Amount of medication per unit of time.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "rateSimpleQuantity": {
               "description": "Amount of medication per unit of time.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             }
           }
         }

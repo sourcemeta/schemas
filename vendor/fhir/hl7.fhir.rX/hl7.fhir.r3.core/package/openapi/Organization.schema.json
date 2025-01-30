@@ -23,7 +23,7 @@
               "description": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "active": {
@@ -32,13 +32,13 @@
             },
             "_active": {
               "description": "Extensions for active",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "The kind(s) of organization that this is.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "name": {
@@ -47,7 +47,7 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "alias": {
               "description": "A list of alternate names that the organization is known as, or was known as in the past.",
@@ -60,26 +60,26 @@
               "description": "Extensions for alias",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "telecom": {
               "description": "A contact detail for the organization.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "address": {
               "description": "An address for the organization.",
               "type": "array",
               "items": {
-                "$ref": "Address.schema.json#/definitions/Address"
+                "$ref": "Address#/definitions/Address"
               }
             },
             "partOf": {
               "description": "The organization of which this organization forms a part.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "contact": {
               "description": "Contact for the organization for a certain purpose.",
@@ -92,7 +92,7 @@
               "description": "Technical endpoints providing access to services operated for the organization.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -112,22 +112,22 @@
           "properties": {
             "purpose": {
               "description": "Indicates a purpose for which the contact can be reached.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "name": {
               "description": "A name associated with the contact.",
-              "$ref": "HumanName.schema.json#/definitions/HumanName"
+              "$ref": "HumanName#/definitions/HumanName"
             },
             "telecom": {
               "description": "A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "address": {
               "description": "Visiting or postal addresses for the contact.",
-              "$ref": "Address.schema.json#/definitions/Address"
+              "$ref": "Address#/definitions/Address"
             }
           }
         }

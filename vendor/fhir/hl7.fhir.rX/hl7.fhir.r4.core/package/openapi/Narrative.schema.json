@@ -24,7 +24,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "div": {
               "description": "The actual narrative content, a stripped down version of XHTML.",

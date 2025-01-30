@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "Unique identifier for this supply request.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "status": {
               "description": "Status of the supply request.",
@@ -38,11 +38,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "category": {
               "description": "Category of supply, e.g.  central, non-stock, etc. This is used to support work flows associated with the supply process.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "priority": {
               "description": "Indicates how quickly this SupplyRequest should be addressed with respect to other requests.",
@@ -51,7 +51,7 @@
             },
             "_priority": {
               "description": "Extensions for priority",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "orderedItem": {
               "description": "The item being requested.",
@@ -64,15 +64,15 @@
             },
             "_occurrenceDateTime": {
               "description": "Extensions for occurrenceDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "occurrencePeriod": {
               "description": "When the request should be fulfilled.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "occurrenceTiming": {
               "description": "When the request should be fulfilled.",
-              "$ref": "Timing.schema.json#/definitions/Timing"
+              "$ref": "Timing#/definitions/Timing"
             },
             "authoredOn": {
               "description": "When the request was made.",
@@ -81,7 +81,7 @@
             },
             "_authoredOn": {
               "description": "Extensions for authoredOn",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "requester": {
               "description": "The individual who initiated the request and has responsibility for its activation.",
@@ -91,24 +91,24 @@
               "description": "Who is intended to fulfill the request.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "reasonCodeableConcept": {
               "description": "Why the supply item was requested.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "reasonReference": {
               "description": "Why the supply item was requested.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "deliverFrom": {
               "description": "Where the supply is expected to come from.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "deliverTo": {
               "description": "Where the supply is destined to go.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [
@@ -127,15 +127,15 @@
           "properties": {
             "quantity": {
               "description": "The amount that is being ordered of the indicated item.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "itemCodeableConcept": {
               "description": "The item that is requested to be supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "itemReference": {
               "description": "The item that is requested to be supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [
@@ -154,11 +154,11 @@
           "properties": {
             "agent": {
               "description": "The device, practitioner, etc. who initiated the request.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onBehalfOf": {
               "description": "The organization the device or practitioner was acting on behalf of.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [

@@ -23,7 +23,7 @@
               "description": "The notice business identifier.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -33,15 +33,15 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "request": {
               "description": "Reference of resource for which payment is being made.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "response": {
               "description": "Reference of response to resource for which payment is being made.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "statusDate": {
               "description": "The date when the above payment action occurrred.",
@@ -50,7 +50,7 @@
             },
             "_statusDate": {
               "description": "Extensions for statusDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "created": {
               "description": "The date when this resource was created.",
@@ -59,23 +59,23 @@
             },
             "_created": {
               "description": "Extensions for created",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "target": {
               "description": "The Insurer who is target  of the request.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "provider": {
               "description": "The practitioner who is responsible for the services rendered to the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "organization": {
               "description": "The organization which is responsible for the services rendered to the patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "paymentStatus": {
               "description": "The payment status, typically paid: payment sent, cleared: payment received.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             }
           },
           "required": [

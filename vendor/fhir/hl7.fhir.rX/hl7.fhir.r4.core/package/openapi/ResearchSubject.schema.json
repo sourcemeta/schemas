@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "Identifiers assigned to this research study by the sponsor or other systems.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "status": {
               "description": "The current state of the subject.",
@@ -37,19 +37,19 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "The dates the subject began and ended their participation in the study.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "study": {
               "description": "Reference to the study the subject is participating in.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "individual": {
               "description": "The record of the person or animal who is involved in the study.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "assignedArm": {
               "description": "The name of the arm in the study the subject is expected to follow as part of this study.",
@@ -57,7 +57,7 @@
             },
             "_assignedArm": {
               "description": "Extensions for assignedArm",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "actualArm": {
               "description": "The name of the arm in the study the subject actually followed as part of this study.",
@@ -65,11 +65,11 @@
             },
             "_actualArm": {
               "description": "Extensions for actualArm",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "consent": {
               "description": "A record of the patient\u0027s informed agreement to participate in the study.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [

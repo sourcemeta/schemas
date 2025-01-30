@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "A formal identifier that is used to identify this report when it is represented in other formats, or referenced in a specification, model, design or an instance.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "status": {
               "description": "The report status. No data will be available until the report status is complete.",
@@ -34,7 +34,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "The type of measure report. This may be an individual report, which provides a single patient\u0027s score for the measure; a patient listing, which returns the list of patients that meet the various criteria in the measure; or a summary report, which returns a population count for each of the criteria in the measure.",
@@ -47,15 +47,15 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "measure": {
               "description": "A reference to the Measure that was evaluated to produce this report.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "patient": {
               "description": "Optional Patient if the report was requested for a single patient.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "date": {
               "description": "The date this measure report was generated.",
@@ -64,15 +64,15 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reportingOrganization": {
               "description": "Reporting Organization.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "The reporting period for which the report was calculated.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "group": {
               "description": "The results of the calculation, one for each population group in the measure.",
@@ -83,7 +83,7 @@
             },
             "evaluatedResources": {
               "description": "A reference to a Bundle containing the Resources that were used in the evaluation of this report.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [
@@ -104,7 +104,7 @@
           "properties": {
             "identifier": {
               "description": "The identifier of the population group as defined in the measure definition.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "population": {
               "description": "The populations that make up the population group, one for each type of population appropriate for the measure.",
@@ -120,7 +120,7 @@
             },
             "_measureScore": {
               "description": "Extensions for measureScore",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "stratifier": {
               "description": "When a measure includes multiple stratifiers, there will be a stratifier group for each stratifier defined by the measure.",
@@ -146,11 +146,11 @@
           "properties": {
             "identifier": {
               "description": "The identifier of the population being reported, as defined by the population element of the measure.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "code": {
               "description": "The type of the population.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "count": {
               "description": "The number of members of the population.",
@@ -159,11 +159,11 @@
             },
             "_count": {
               "description": "Extensions for count",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "patients": {
               "description": "This element refers to a List of patient level MeasureReport resources, one for each patient in this population.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }
@@ -179,7 +179,7 @@
           "properties": {
             "identifier": {
               "description": "The identifier of this stratifier, as defined in the measure definition.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "stratum": {
               "description": "This element contains the results for a single stratum within the stratifier. For example, when stratifying on administrative gender, there will be four strata, one for each possible gender value.",
@@ -206,7 +206,7 @@
             },
             "_value": {
               "description": "Extensions for value",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "population": {
               "description": "The populations that make up the stratum, one for each type of population appropriate to the measure.",
@@ -222,7 +222,7 @@
             },
             "_measureScore": {
               "description": "Extensions for measureScore",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }
@@ -238,11 +238,11 @@
           "properties": {
             "identifier": {
               "description": "The identifier of the population being reported, as defined by the population element of the measure.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "code": {
               "description": "The type of the population.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "count": {
               "description": "The number of members of the population in this stratum.",
@@ -251,11 +251,11 @@
             },
             "_count": {
               "description": "Extensions for count",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "patients": {
               "description": "This element refers to a List of patient level MeasureReport resources, one for each patient in this population in this stratum.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }

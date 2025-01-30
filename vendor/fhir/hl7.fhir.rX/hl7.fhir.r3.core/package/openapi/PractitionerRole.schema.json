@@ -23,7 +23,7 @@
               "description": "Business Identifiers that are specific to a role/location.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "active": {
@@ -32,53 +32,53 @@
             },
             "_active": {
               "description": "Extensions for active",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "The period during which the person is authorized to act as a practitioner in these role(s) for the organization.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "practitioner": {
               "description": "Practitioner that is able to provide the defined services for the organation.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "organization": {
               "description": "The organization where the Practitioner performs the roles associated.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "code": {
               "description": "Roles which this practitioner is authorized to perform for the organization.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "specialty": {
               "description": "Specific specialty of the practitioner.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "location": {
               "description": "The location(s) at which this practitioner provides care.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "healthcareService": {
               "description": "The list of healthcare services that this worker provides for this role\u0027s Organization/Location(s).",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "telecom": {
               "description": "Contact details that are specific to the role/location/service.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "availableTime": {
@@ -101,13 +101,13 @@
             },
             "_availabilityExceptions": {
               "description": "Extensions for availabilityExceptions",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "endpoint": {
               "description": "Technical endpoints providing access to services operated for the practitioner with this role.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -137,7 +137,7 @@
               "description": "Extensions for daysOfWeek",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "allDay": {
@@ -146,7 +146,7 @@
             },
             "_allDay": {
               "description": "Extensions for allDay",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "availableStartTime": {
               "description": "The opening time of day. Note: If the AllDay flag is set, then this time is ignored.",
@@ -155,7 +155,7 @@
             },
             "_availableStartTime": {
               "description": "Extensions for availableStartTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "availableEndTime": {
               "description": "The closing time of day. Note: If the AllDay flag is set, then this time is ignored.",
@@ -164,7 +164,7 @@
             },
             "_availableEndTime": {
               "description": "Extensions for availableEndTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }
@@ -184,11 +184,11 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "during": {
               "description": "Service is not available (seasonally or for a public holiday) from this date.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           }
         }

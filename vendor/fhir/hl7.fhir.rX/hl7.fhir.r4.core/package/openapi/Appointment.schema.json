@@ -23,7 +23,7 @@
               "description": "This records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -42,42 +42,42 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "serviceCategory": {
               "description": "A broad categorisation of the service that is to be performed during this appointment.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "serviceType": {
               "description": "The specific service that is to be performed during this appointment.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "specialty": {
               "description": "The specialty of a practitioner that would be required to perform the service requested in this appointment.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "appointmentType": {
               "description": "The style of appointment or patient that has been booked in the slot (not service type).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "reason": {
               "description": "The reason that this appointment is being scheduled. This is more clinical than administrative.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "indication": {
               "description": "Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "priority": {
@@ -87,7 +87,7 @@
             },
             "_priority": {
               "description": "Extensions for priority",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field.",
@@ -95,13 +95,13 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "supportingInformation": {
               "description": "Additional information to support the appointment provided when making the appointment.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "start": {
@@ -110,7 +110,7 @@
             },
             "_start": {
               "description": "Extensions for start",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "end": {
               "description": "Date/Time that the appointment is to conclude.",
@@ -118,7 +118,7 @@
             },
             "_end": {
               "description": "Extensions for end",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "minutesDuration": {
               "description": "Number of minutes that the appointment is to take. This can be less than the duration between the start and end times (where actual time of appointment is only an estimate or is a planned appointment request).",
@@ -127,13 +127,13 @@
             },
             "_minutesDuration": {
               "description": "Extensions for minutesDuration",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "slot": {
               "description": "The slots from the participants\u0027 schedules that will be filled by the appointment.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "created": {
@@ -143,7 +143,7 @@
             },
             "_created": {
               "description": "Extensions for created",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "comment": {
               "description": "Additional comments about the appointment.",
@@ -151,13 +151,13 @@
             },
             "_comment": {
               "description": "Extensions for comment",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "incomingReferral": {
               "description": "The referral request this appointment is allocated to assess (incoming referral).",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "participant": {
@@ -171,7 +171,7 @@
               "description": "A set of date ranges (potentially including times) that the appointment is preferred to be scheduled within. When using these values, the minutes duration should be provided to indicate the length of the appointment to fill and populate the start/end times for the actual allocated time.",
               "type": "array",
               "items": {
-                "$ref": "Period.schema.json#/definitions/Period"
+                "$ref": "Period#/definitions/Period"
               }
             }
           },
@@ -194,12 +194,12 @@
               "description": "Role of participant in the appointment.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "actor": {
               "description": "A Person, Location/HealthcareService or Device that is participating in the appointment.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "required": {
               "description": "Is this participant required to be present at the meeting. This covers a use-case where 2 doctors need to meet to discuss the results for a specific patient, and the patient is not required to be present.",
@@ -212,7 +212,7 @@
             },
             "_required": {
               "description": "Extensions for required",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "status": {
               "description": "Participation status of the actor.",
@@ -226,7 +226,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

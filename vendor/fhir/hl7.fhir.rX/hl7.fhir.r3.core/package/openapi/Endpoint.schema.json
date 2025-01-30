@@ -23,7 +23,7 @@
               "description": "Identifier for the organization that is used to identify the endpoint across multiple disparate systems.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -40,11 +40,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "connectionType": {
               "description": "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way. (e.g. XDS.b/DICOM/cds-hook).",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "name": {
               "description": "A friendly name that this endpoint can be referred to with.",
@@ -52,28 +52,28 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "managingOrganization": {
               "description": "The organization that manages this endpoint (even if technically another organisation is hosting this in the cloud, it is the organisation associated with the data).",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "contact": {
               "description": "Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "period": {
               "description": "The interval during which the endpoint is expected to be operational.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "payloadType": {
               "description": "The payload type describes the acceptable content that can be communicated on the endpoint.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "payloadMimeType": {
@@ -88,7 +88,7 @@
               "description": "Extensions for payloadMimeType",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "address": {
@@ -97,7 +97,7 @@
             },
             "_address": {
               "description": "Extensions for address",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "header": {
               "description": "Additional headers / information to send as part of the notification.",
@@ -110,7 +110,7 @@
               "description": "Extensions for header",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             }
           },

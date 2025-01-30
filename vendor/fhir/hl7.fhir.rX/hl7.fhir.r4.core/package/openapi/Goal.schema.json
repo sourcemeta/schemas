@@ -23,7 +23,7 @@
               "description": "This records identifiers associated with this care plan that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -47,26 +47,26 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "category": {
               "description": "Indicates a category the goal falls within.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "priority": {
               "description": "Identifies the mutually agreed level of importance associated with reaching/sustaining the goal.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "description": {
               "description": "Human-readable and/or coded description of a specific desired objective of care, such as \"control blood pressure\" or \"negotiate an obstacle course\" or \"dance with child at wedding\".",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subject": {
               "description": "Identifies the patient, group or organization for whom the goal is being established.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "startDate": {
               "description": "The date or event after which the goal should begin being pursued.",
@@ -75,11 +75,11 @@
             },
             "_startDate": {
               "description": "Extensions for startDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "startCodeableConcept": {
               "description": "The date or event after which the goal should begin being pursued.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "target": {
               "description": "Indicates what should be done by when.",
@@ -92,7 +92,7 @@
             },
             "_statusDate": {
               "description": "Extensions for statusDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "statusReason": {
               "description": "Captures the reason for the current status.",
@@ -100,38 +100,38 @@
             },
             "_statusReason": {
               "description": "Extensions for statusReason",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "expressedBy": {
               "description": "Indicates whose goal this is - patient goal, practitioner goal, etc.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "addresses": {
               "description": "The identified conditions and other health record elements that are intended to be addressed by the goal.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "note": {
               "description": "Any comments related to the goal.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             },
             "outcomeCode": {
               "description": "Identifies the change (or lack of change) at the point when the status of the goal is assessed.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "outcomeReference": {
               "description": "Details of what\u0027s changed (or not changed).",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -152,19 +152,19 @@
           "properties": {
             "measure": {
               "description": "The parameter whose value is being tracked, e.g. body weight, blood pressure, or hemoglobin A1c level.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "detailQuantity": {
               "description": "The target value of the focus to be achieved to signify the fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or both values of the range can be specified. When a low value is missing, it indicates that the goal is achieved at any focus value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any focus value at or above the low value.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "detailRange": {
               "description": "The target value of the focus to be achieved to signify the fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or both values of the range can be specified. When a low value is missing, it indicates that the goal is achieved at any focus value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any focus value at or above the low value.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "detailCodeableConcept": {
               "description": "The target value of the focus to be achieved to signify the fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or both values of the range can be specified. When a low value is missing, it indicates that the goal is achieved at any focus value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any focus value at or above the low value.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "dueDate": {
               "description": "Indicates either the date or the duration after start by which the goal should be met.",
@@ -173,11 +173,11 @@
             },
             "_dueDate": {
               "description": "Extensions for dueDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "dueDuration": {
               "description": "Indicates either the date or the duration after start by which the goal should be met.",
-              "$ref": "Duration.schema.json#/definitions/Duration"
+              "$ref": "Duration#/definitions/Duration"
             }
           }
         }

@@ -23,7 +23,7 @@
               "description": "This records identifiers associated with this allergy/intolerance concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "clinicalStatus": {
@@ -37,7 +37,7 @@
             },
             "_clinicalStatus": {
               "description": "Extensions for clinicalStatus",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "verificationStatus": {
               "description": "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).",
@@ -51,7 +51,7 @@
             },
             "_verificationStatus": {
               "description": "Extensions for verificationStatus",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "Identification of the underlying physiological mechanism for the reaction risk.",
@@ -63,7 +63,7 @@
             },
             "_type": {
               "description": "Extensions for type",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "category": {
               "description": "Category of the identified substance.",
@@ -82,7 +82,7 @@
               "description": "Extensions for category",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "criticality": {
@@ -96,15 +96,15 @@
             },
             "_criticality": {
               "description": "Extensions for criticality",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "code": {
               "description": "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., \"Latex\"), an allergy or intolerance condition (e.g., \"Latex allergy\"), or a negated/excluded code for a specific substance or class (e.g., \"No latex allergy\") or a general or categorical negated statement (e.g.,  \"No known allergy\", \"No known drug allergies\").",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "patient": {
               "description": "The patient who has the allergy or intolerance.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onsetDateTime": {
               "description": "Estimated or actual date,  date-time, or age when allergy or intolerance was identified.",
@@ -113,19 +113,19 @@
             },
             "_onsetDateTime": {
               "description": "Extensions for onsetDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "onsetAge": {
               "description": "Estimated or actual date,  date-time, or age when allergy or intolerance was identified.",
-              "$ref": "Age.schema.json#/definitions/Age"
+              "$ref": "Age#/definitions/Age"
             },
             "onsetPeriod": {
               "description": "Estimated or actual date,  date-time, or age when allergy or intolerance was identified.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "onsetRange": {
               "description": "Estimated or actual date,  date-time, or age when allergy or intolerance was identified.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "onsetString": {
               "description": "Estimated or actual date,  date-time, or age when allergy or intolerance was identified.",
@@ -133,7 +133,7 @@
             },
             "_onsetString": {
               "description": "Extensions for onsetString",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "assertedDate": {
               "description": "The date on which the existance of the AllergyIntolerance was first asserted or acknowledged.",
@@ -142,15 +142,15 @@
             },
             "_assertedDate": {
               "description": "Extensions for assertedDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "recorder": {
               "description": "Individual who recorded the record and takes responsibility for its content.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "asserter": {
               "description": "The source of the information about the allergy that is recorded.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "lastOccurrence": {
               "description": "Represents the date and/or time of the last known occurrence of a reaction event.",
@@ -159,13 +159,13 @@
             },
             "_lastOccurrence": {
               "description": "Extensions for lastOccurrence",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "note": {
               "description": "Additional narrative about the propensity for the Adverse Reaction, not captured in other fields.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             },
             "reaction": {
@@ -193,13 +193,13 @@
           "properties": {
             "substance": {
               "description": "Identification of the specific substance (or pharmaceutical product) considered to be responsible for the Adverse Reaction event. Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the \u0027code\u0027 and ignore the \u0027reaction.substance\u0027.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "manifestation": {
               "description": "Clinical symptoms and/or signs that are observed or associated with the adverse reaction event.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "description": {
@@ -208,7 +208,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "onset": {
               "description": "Record of the date and/or time of the onset of the Reaction.",
@@ -217,7 +217,7 @@
             },
             "_onset": {
               "description": "Extensions for onset",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "severity": {
               "description": "Clinical assessment of the severity of the reaction event as a whole, potentially considering multiple different manifestations.",
@@ -230,17 +230,17 @@
             },
             "_severity": {
               "description": "Extensions for severity",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "exposureRoute": {
               "description": "Identification of the route by which the subject was exposed to the substance.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "note": {
               "description": "Additional text about the adverse reaction event not captured in other fields.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             }
           },

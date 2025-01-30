@@ -23,7 +23,7 @@
               "description": "An identifier that applies to this person in this role.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "active": {
@@ -32,27 +32,27 @@
             },
             "_active": {
               "description": "Extensions for active",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "The name(s) associated with the practitioner.",
               "type": "array",
               "items": {
-                "$ref": "HumanName.schema.json#/definitions/HumanName"
+                "$ref": "HumanName#/definitions/HumanName"
               }
             },
             "telecom": {
               "description": "A contact detail for the practitioner, e.g. a telephone number or an email address.",
               "type": "array",
               "items": {
-                "$ref": "ContactPoint.schema.json#/definitions/ContactPoint"
+                "$ref": "ContactPoint#/definitions/ContactPoint"
               }
             },
             "address": {
               "description": "Address(es) of the practitioner that are not role specific (typically home address). \rWork addresses are not typically entered in this property as they are usually role dependent.",
               "type": "array",
               "items": {
-                "$ref": "Address.schema.json#/definitions/Address"
+                "$ref": "Address#/definitions/Address"
               }
             },
             "gender": {
@@ -67,7 +67,7 @@
             },
             "_gender": {
               "description": "Extensions for gender",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "birthDate": {
               "description": "The date of birth for the practitioner.",
@@ -76,13 +76,13 @@
             },
             "_birthDate": {
               "description": "Extensions for birthDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "photo": {
               "description": "Image of the person.",
               "type": "array",
               "items": {
-                "$ref": "Attachment.schema.json#/definitions/Attachment"
+                "$ref": "Attachment#/definitions/Attachment"
               }
             },
             "qualification": {
@@ -96,7 +96,7 @@
               "description": "A language the practitioner is able to use in patient communication.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             }
           },
@@ -118,20 +118,20 @@
               "description": "An identifier that applies to this person\u0027s qualification in this role.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "code": {
               "description": "Coded representation of the qualification.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "period": {
               "description": "Period during which the qualification is valid.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "issuer": {
               "description": "Organization that regulates and issues the qualification.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [

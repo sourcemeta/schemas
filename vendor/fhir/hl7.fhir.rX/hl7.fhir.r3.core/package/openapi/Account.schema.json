@@ -23,7 +23,7 @@
               "description": "Unique identifier used to reference the account.  May or may not be intended for human use (e.g. credit card number).",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "status": {
@@ -37,11 +37,11 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "type": {
               "description": "Categorizes the account for reporting and searching purposes.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "name": {
               "description": "Name used for the account when displaying it to humans in reports, etc.",
@@ -49,23 +49,23 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "subject": {
               "description": "Identifies the patient, device, practitioner, location or other object the account is associated with.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "period": {
               "description": "Identifies the period of time the account applies to; e.g. accounts created per fiscal year, quarter, etc.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "active": {
               "description": "Indicates the period of time over which the account is allowed to have transactions posted to it.\nThis period may be different to the coveragePeriod which is the duration of time that services may occur.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "balance": {
               "description": "Represents the sum of all credits less all debits associated with the account.  Might be positive, zero or negative.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             },
             "coverage": {
               "description": "The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account.",
@@ -76,7 +76,7 @@
             },
             "owner": {
               "description": "Indicates the organization, department, etc. with responsibility for the account.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "description": {
               "description": "Provides additional information about what the account tracks and how it is used.",
@@ -84,7 +84,7 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "guarantor": {
               "description": "Parties financially responsible for the account.",
@@ -110,7 +110,7 @@
           "properties": {
             "coverage": {
               "description": "The party(s) that are responsible for payment (or part of) of charges applied to this account (including self-pay).\n\nA coverage may only be resposible for specific types of charges, and the sequence of the coverages in the account could be important when processing billing.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "priority": {
               "description": "The priority of the coverage in the context of this account.",
@@ -119,7 +119,7 @@
             },
             "_priority": {
               "description": "Extensions for priority",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [
@@ -138,7 +138,7 @@
           "properties": {
             "party": {
               "description": "The entity who is responsible.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "onHold": {
               "description": "A guarantor may be placed on credit hold or otherwise have their role temporarily suspended.",
@@ -146,11 +146,11 @@
             },
             "_onHold": {
               "description": "Extensions for onHold",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "period": {
               "description": "The timeframe during which the guarantor accepts responsibility for the account.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             }
           },
           "required": [

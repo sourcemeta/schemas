@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "Identifiers assigned to this event performer or other systems.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "definition": {
               "description": "References the source of pricing information, rules of application for the code this ChargeItem uses.",
@@ -34,7 +34,7 @@
               "description": "Extensions for definition",
               "type": "array",
               "items": {
-                "$ref": "Element.schema.json#/definitions/Element"
+                "$ref": "Element#/definitions/Element"
               }
             },
             "status": {
@@ -52,26 +52,26 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "partOf": {
               "description": "ChargeItems can be grouped to larger ChargeItems covering the whole set.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "code": {
               "description": "A code that identifies the charge, like a billing code.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subject": {
               "description": "The individual or set of individuals the action is being or was performed on.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "context": {
               "description": "The encounter or episode of care that establishes the context for this event.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "occurrenceDateTime": {
               "description": "Date/time(s) or duration when the charged service was applied.",
@@ -80,15 +80,15 @@
             },
             "_occurrenceDateTime": {
               "description": "Extensions for occurrenceDateTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "occurrencePeriod": {
               "description": "Date/time(s) or duration when the charged service was applied.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "occurrenceTiming": {
               "description": "Date/time(s) or duration when the charged service was applied.",
-              "$ref": "Timing.schema.json#/definitions/Timing"
+              "$ref": "Timing#/definitions/Timing"
             },
             "participant": {
               "description": "Indicates who or what performed or participated in the charged service.",
@@ -99,21 +99,21 @@
             },
             "performingOrganization": {
               "description": "The organization requesting the service.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "requestingOrganization": {
               "description": "The organization performing the service.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "quantity": {
               "description": "Quantity of which the charge item has been serviced.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "bodysite": {
               "description": "The anatomical location where the related service has been applied.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "factorOverride": {
@@ -123,11 +123,11 @@
             },
             "_factorOverride": {
               "description": "Extensions for factorOverride",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "priceOverride": {
               "description": "Total price of the charge overriding the list price associated with the code.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             },
             "overrideReason": {
               "description": "If the list price or the rule based factor associated with the code is overridden, this attribute can capture a text to indicate the  reason for this action.",
@@ -135,11 +135,11 @@
             },
             "_overrideReason": {
               "description": "Extensions for overrideReason",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "enterer": {
               "description": "The device, practitioner, etc. who entered the charge item.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "enteredDate": {
               "description": "Date the charge item was entered.",
@@ -148,41 +148,41 @@
             },
             "_enteredDate": {
               "description": "Extensions for enteredDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reason": {
               "description": "Describes why the event occurred in coded or textual form.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "service": {
               "description": "Indicated the rendered service that caused this charge.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "account": {
               "description": "Account into which this ChargeItems belongs.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "note": {
               "description": "Comments made about the event by the performer, subject or other participants.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             },
             "supportingInformation": {
               "description": "Further information supporting the this charge.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -204,11 +204,11 @@
           "properties": {
             "role": {
               "description": "Describes the type of performance or participation(e.g. primary surgeon, anaesthesiologiest, etc.).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "actor": {
               "description": "The device, practitioner, etc. who performed or participated in the service.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           },
           "required": [

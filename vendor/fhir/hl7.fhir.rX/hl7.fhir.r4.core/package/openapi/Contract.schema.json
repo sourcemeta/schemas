@@ -21,7 +21,7 @@
             },
             "identifier": {
               "description": "Unique identifier for this Contract.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "status": {
               "description": "The status of the resource instance.",
@@ -30,7 +30,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "issued": {
               "description": "When this  Contract was issued.",
@@ -39,78 +39,78 @@
             },
             "_issued": {
               "description": "Extensions for issued",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "applies": {
               "description": "Relevant time or time-period when this Contract is applicable.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "subject": {
               "description": "The target entity impacted by or of interest to parties to the agreement.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "topic": {
               "description": "The matter of concern in the context of this agreement.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "authority": {
               "description": "A formally or informally recognized grouping of people, principals, organizations, or jurisdictions formed for the purpose of achieving some form of collective action such as the promulgation, administration and enforcement of contracts and policies.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "domain": {
               "description": "Recognized governance framework or system operating with a circumscribed scope in accordance with specified principles, policies, processes or procedures for managing rights, actions, or behaviors of parties or principals relative to resources.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "type": {
               "description": "Type of Contract such as an insurance policy, real estate contract, a will, power of attorny, Privacy or Security policy , trust framework agreement, etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subType": {
               "description": "More specific type or specialization of an overarching or more general contract such as auto insurance, home owner  insurance, prenupial agreement, Advanced-Directive, or privacy consent.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "action": {
               "description": "Action stipulated by this Contract.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "actionReason": {
               "description": "Reason for action stipulated by this Contract.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "decisionType": {
               "description": "The type of decision made by a grantor with respect to an offer made by a grantee.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "contentDerivative": {
               "description": "The minimal content derived from the basal information source at a specific stage in its lifecycle.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "securityLabel": {
               "description": "A set of security labels that define which resources are controlled by this consent. If more than one label is specified, all resources must have all the specified labels.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             },
             "agent": {
@@ -143,11 +143,11 @@
             },
             "bindingAttachment": {
               "description": "Legally binding Contract: This is the signed and legally recognized representation of the Contract, which is considered the \"source of truth\" and which would be the basis for legal action related to enforcement of this Contract.",
-              "$ref": "Attachment.schema.json#/definitions/Attachment"
+              "$ref": "Attachment#/definitions/Attachment"
             },
             "bindingReference": {
               "description": "Legally binding Contract: This is the signed and legally recognized representation of the Contract, which is considered the \"source of truth\" and which would be the basis for legal action related to enforcement of this Contract.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "friendly": {
               "description": "The \"patient friendly language\" versionof the Contract in whole or in parts. \"Patient friendly language\" means the representation of the Contract and Contract Provisions in a manner that is readily accessible and understandable by a layperson in accordance with best practices for communication styles that ensure that those agreeing to or signing the Contract understand the roles, actions, obligations, responsibilities, and implication of the agreement.",
@@ -187,13 +187,13 @@
           "properties": {
             "actor": {
               "description": "Who or what parties are assigned roles in this Contract.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "role": {
               "description": "Role type of agent assigned roles in this Contract.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             }
           },
@@ -213,17 +213,17 @@
           "properties": {
             "type": {
               "description": "Role of this Contract signer, e.g. notary, grantee.",
-              "$ref": "Coding.schema.json#/definitions/Coding"
+              "$ref": "Coding#/definitions/Coding"
             },
             "party": {
               "description": "Party which is a signator to this Contract.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "signature": {
               "description": "Legally binding Contract DSIG signature contents in Base64.",
               "type": "array",
               "items": {
-                "$ref": "Signature.schema.json#/definitions/Signature"
+                "$ref": "Signature#/definitions/Signature"
               }
             }
           },
@@ -245,15 +245,15 @@
           "properties": {
             "entityCodeableConcept": {
               "description": "Specific type of Contract Valued Item that may be priced.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "entityReference": {
               "description": "Specific type of Contract Valued Item that may be priced.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "identifier": {
               "description": "Identifies a Contract Valued Item instance.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "effectiveTime": {
               "description": "Indicates the time during which this Contract ValuedItem information is effective.",
@@ -262,15 +262,15 @@
             },
             "_effectiveTime": {
               "description": "Extensions for effectiveTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "quantity": {
               "description": "Specifies the units by which the Contract Valued Item is measured or counted, and quantifies the countable or measurable Contract Valued Item instances.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "unitPrice": {
               "description": "A Contract Valued Item unit valuation measure.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             },
             "factor": {
               "description": "A real number that represents a multiplier used in determining the overall value of the Contract Valued Item delivered. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount.",
@@ -279,7 +279,7 @@
             },
             "_factor": {
               "description": "Extensions for factor",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "points": {
               "description": "An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the Contract Valued Item delivered. The concept of Points allows for assignment of point values for a Contract Valued Item, such that a monetary amount can be assigned to each point.",
@@ -288,11 +288,11 @@
             },
             "_points": {
               "description": "Extensions for points",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "net": {
               "description": "Expresses the product of the Contract Valued Item unitQuantity and the unitPriceAmt. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points \u003d net Amount. Quantity, factor and points are assumed to be 1 if not supplied.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             }
           }
         }
@@ -308,7 +308,7 @@
           "properties": {
             "identifier": {
               "description": "Unique identifier for this particular Contract Provision.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "issued": {
               "description": "When this Contract Provision was issued.",
@@ -317,46 +317,46 @@
             },
             "_issued": {
               "description": "Extensions for issued",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "applies": {
               "description": "Relevant time or time-period when this Contract Provision is applicable.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "type": {
               "description": "Type of Contract Provision such as specific requirements, purposes for actions, obligations, prohibitions, e.g. life time maximum benefit.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "subType": {
               "description": "Subtype of this Contract Provision, e.g. life time maximum payment for a contract term for specific valued item, e.g. disability payment.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "topic": {
               "description": "The matter of concern in the context of this provision of the agrement.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "action": {
               "description": "Action stipulated by this Contract Provision.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "actionReason": {
               "description": "Reason or purpose for the action stipulated by this Contract Provision.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "securityLabel": {
               "description": "A set of security labels that define which terms are controlled by this condition.",
               "type": "array",
               "items": {
-                "$ref": "Coding.schema.json#/definitions/Coding"
+                "$ref": "Coding#/definitions/Coding"
               }
             },
             "agent": {
@@ -372,7 +372,7 @@
             },
             "_text": {
               "description": "Extensions for text",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "valuedItem": {
               "description": "Contract Provision Valued Item List.",
@@ -402,13 +402,13 @@
           "properties": {
             "actor": {
               "description": "The agent assigned a role in this Contract Provision.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "role": {
               "description": "Role played by the agent assigned this role in the execution of this Contract Provision.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             }
           },
@@ -428,15 +428,15 @@
           "properties": {
             "entityCodeableConcept": {
               "description": "Specific type of Contract Provision Valued Item that may be priced.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "entityReference": {
               "description": "Specific type of Contract Provision Valued Item that may be priced.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "identifier": {
               "description": "Identifies a Contract Provision Valued Item instance.",
-              "$ref": "Identifier.schema.json#/definitions/Identifier"
+              "$ref": "Identifier#/definitions/Identifier"
             },
             "effectiveTime": {
               "description": "Indicates the time during which this Contract Term ValuedItem information is effective.",
@@ -445,15 +445,15 @@
             },
             "_effectiveTime": {
               "description": "Extensions for effectiveTime",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "quantity": {
               "description": "Specifies the units by which the Contract Provision Valued Item is measured or counted, and quantifies the countable or measurable Contract Term Valued Item instances.",
-              "$ref": "Quantity.schema.json#/definitions/Quantity"
+              "$ref": "Quantity#/definitions/Quantity"
             },
             "unitPrice": {
               "description": "A Contract Provision Valued Item unit valuation measure.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             },
             "factor": {
               "description": "A real number that represents a multiplier used in determining the overall value of the Contract Provision Valued Item delivered. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount.",
@@ -462,7 +462,7 @@
             },
             "_factor": {
               "description": "Extensions for factor",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "points": {
               "description": "An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the Contract Provision Valued Item delivered. The concept of Points allows for assignment of point values for a Contract ProvisionValued Item, such that a monetary amount can be assigned to each point.",
@@ -471,11 +471,11 @@
             },
             "_points": {
               "description": "Extensions for points",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "net": {
               "description": "Expresses the product of the Contract Provision Valued Item unitQuantity and the unitPriceAmt. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points \u003d net Amount. Quantity, factor and points are assumed to be 1 if not supplied.",
-              "$ref": "Money.schema.json#/definitions/Money"
+              "$ref": "Money#/definitions/Money"
             }
           }
         }
@@ -491,11 +491,11 @@
           "properties": {
             "contentAttachment": {
               "description": "Human readable rendering of this Contract in a format and representation intended to enhance comprehension and ensure understandability.",
-              "$ref": "Attachment.schema.json#/definitions/Attachment"
+              "$ref": "Attachment#/definitions/Attachment"
             },
             "contentReference": {
               "description": "Human readable rendering of this Contract in a format and representation intended to enhance comprehension and ensure understandability.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }
@@ -511,11 +511,11 @@
           "properties": {
             "contentAttachment": {
               "description": "Contract legal text in human renderable form.",
-              "$ref": "Attachment.schema.json#/definitions/Attachment"
+              "$ref": "Attachment#/definitions/Attachment"
             },
             "contentReference": {
               "description": "Contract legal text in human renderable form.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }
@@ -531,11 +531,11 @@
           "properties": {
             "contentAttachment": {
               "description": "Computable Contract conveyed using a policy rule language (e.g. XACML, DKAL, SecPal).",
-              "$ref": "Attachment.schema.json#/definitions/Attachment"
+              "$ref": "Attachment#/definitions/Attachment"
             },
             "contentReference": {
               "description": "Computable Contract conveyed using a policy rule language (e.g. XACML, DKAL, SecPal).",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             }
           }
         }

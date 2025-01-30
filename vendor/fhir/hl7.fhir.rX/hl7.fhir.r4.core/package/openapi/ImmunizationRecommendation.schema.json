@@ -23,12 +23,12 @@
               "description": "A unique identifier assigned to this particular recommendation record.",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "patient": {
               "description": "The patient the recommendations are for.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "recommendation": {
               "description": "Vaccine administration recommendations.",
@@ -61,15 +61,15 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "vaccineCode": {
               "description": "Vaccine that pertains to the recommendation.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "targetDisease": {
               "description": "The targeted disease for the recommendation.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "doseNumber": {
               "description": "The next recommended dose number (e.g. dose 2 is the next recommended dose).",
@@ -78,11 +78,11 @@
             },
             "_doseNumber": {
               "description": "Extensions for doseNumber",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "forecastStatus": {
               "description": "Vaccine administration status.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "dateCriterion": {
               "description": "Vaccine date recommendations.  For example, earliest date to administer, latest date to administer, etc.",
@@ -99,14 +99,14 @@
               "description": "Immunization event history that supports the status and recommendation.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "supportingPatientInformation": {
               "description": "Patient Information that supports the status and recommendation.  This includes patient observations, adverse reactions and allergy/intolerance information.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             }
           },
@@ -126,7 +126,7 @@
           "properties": {
             "code": {
               "description": "Date classification of recommendation.  For example, earliest date to give, latest date to give, etc.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "value": {
               "description": "The date whose meaning is specified by dateCriterion.code.",
@@ -135,7 +135,7 @@
             },
             "_value": {
               "description": "Extensions for value",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           },
           "required": [
@@ -159,7 +159,7 @@
             },
             "_doseSequence": {
               "description": "Extensions for doseSequence",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "description": {
               "description": "Contains the description about the protocol under which the vaccine was administered.",
@@ -167,11 +167,11 @@
             },
             "_description": {
               "description": "Extensions for description",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "authority": {
               "description": "Indicates the authority who published the protocol.  For example, ACIP.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "series": {
               "description": "One possible path to achieve presumed immunity against a disease - within the context of an authority.",
@@ -179,7 +179,7 @@
             },
             "_series": {
               "description": "Extensions for series",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             }
           }
         }

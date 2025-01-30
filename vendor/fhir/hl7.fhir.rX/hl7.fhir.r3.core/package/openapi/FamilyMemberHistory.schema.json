@@ -23,14 +23,14 @@
               "description": "This records identifiers associated with this family member history record that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).",
               "type": "array",
               "items": {
-                "$ref": "Identifier.schema.json#/definitions/Identifier"
+                "$ref": "Identifier#/definitions/Identifier"
               }
             },
             "definition": {
               "description": "A protocol or questionnaire that was adhered to in whole or in part by this event.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "status": {
@@ -45,7 +45,7 @@
             },
             "_status": {
               "description": "Extensions for status",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "notDone": {
               "description": "If true, indicates the taking of an individual family member\u0027s history did not occur. The notDone element should not be used to document negated conditions, such as a family member that did not have a condition.",
@@ -53,15 +53,15 @@
             },
             "_notDone": {
               "description": "Extensions for notDone",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "notDoneReason": {
               "description": "Describes why the family member\u0027s history is absent.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "patient": {
               "description": "The person who this history concerns.",
-              "$ref": "Reference.schema.json#/definitions/Reference"
+              "$ref": "Reference#/definitions/Reference"
             },
             "date": {
               "description": "The date (and possibly time) when the family member history was taken.",
@@ -70,7 +70,7 @@
             },
             "_date": {
               "description": "Extensions for date",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "name": {
               "description": "This will either be a name or a description; e.g. \"Aunt Susan\", \"my cousin with the red hair\".",
@@ -78,11 +78,11 @@
             },
             "_name": {
               "description": "Extensions for name",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "relationship": {
               "description": "The type of relationship this person has to the patient (father, mother, brother etc.).",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "gender": {
               "description": "Administrative Gender - the gender that the relative is considered to have for administration and record keeping purposes.",
@@ -96,11 +96,11 @@
             },
             "_gender": {
               "description": "Extensions for gender",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "bornPeriod": {
               "description": "The actual or approximate date of birth of the relative.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "bornDate": {
               "description": "The actual or approximate date of birth of the relative.",
@@ -109,7 +109,7 @@
             },
             "_bornDate": {
               "description": "Extensions for bornDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "bornString": {
               "description": "The actual or approximate date of birth of the relative.",
@@ -117,15 +117,15 @@
             },
             "_bornString": {
               "description": "Extensions for bornString",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "ageAge": {
               "description": "The age of the relative at the time the family member history is recorded.",
-              "$ref": "Age.schema.json#/definitions/Age"
+              "$ref": "Age#/definitions/Age"
             },
             "ageRange": {
               "description": "The age of the relative at the time the family member history is recorded.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "ageString": {
               "description": "The age of the relative at the time the family member history is recorded.",
@@ -133,7 +133,7 @@
             },
             "_ageString": {
               "description": "Extensions for ageString",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "estimatedAge": {
               "description": "If true, indicates that the age value specified is an estimated value.",
@@ -141,7 +141,7 @@
             },
             "_estimatedAge": {
               "description": "Extensions for estimatedAge",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "deceasedBoolean": {
               "description": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
@@ -149,15 +149,15 @@
             },
             "_deceasedBoolean": {
               "description": "Extensions for deceasedBoolean",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "deceasedAge": {
               "description": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
-              "$ref": "Age.schema.json#/definitions/Age"
+              "$ref": "Age#/definitions/Age"
             },
             "deceasedRange": {
               "description": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "deceasedDate": {
               "description": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
@@ -166,7 +166,7 @@
             },
             "_deceasedDate": {
               "description": "Extensions for deceasedDate",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "deceasedString": {
               "description": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
@@ -174,27 +174,27 @@
             },
             "_deceasedString": {
               "description": "Extensions for deceasedString",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "reasonCode": {
               "description": "Describes why the family member history occurred in coded or textual form.",
               "type": "array",
               "items": {
-                "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+                "$ref": "CodeableConcept#/definitions/CodeableConcept"
               }
             },
             "reasonReference": {
               "description": "Indicates a Condition, Observation, AllergyIntolerance, or QuestionnaireResponse that justifies this family member history event.",
               "type": "array",
               "items": {
-                "$ref": "Reference.schema.json#/definitions/Reference"
+                "$ref": "Reference#/definitions/Reference"
               }
             },
             "note": {
               "description": "This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             },
             "condition": {
@@ -223,23 +223,23 @@
           "properties": {
             "code": {
               "description": "The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like \u0027cancer\u0027 depending on how much is known about the condition and the capabilities of the creating system.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "outcome": {
               "description": "Indicates what happened as a result of this condition.  If the condition resulted in death, deceased date is captured on the relation.",
-              "$ref": "CodeableConcept.schema.json#/definitions/CodeableConcept"
+              "$ref": "CodeableConcept#/definitions/CodeableConcept"
             },
             "onsetAge": {
               "description": "Either the age of onset, range of approximate age or descriptive string can be recorded.  For conditions with multiple occurrences, this describes the first known occurrence.",
-              "$ref": "Age.schema.json#/definitions/Age"
+              "$ref": "Age#/definitions/Age"
             },
             "onsetRange": {
               "description": "Either the age of onset, range of approximate age or descriptive string can be recorded.  For conditions with multiple occurrences, this describes the first known occurrence.",
-              "$ref": "Range.schema.json#/definitions/Range"
+              "$ref": "Range#/definitions/Range"
             },
             "onsetPeriod": {
               "description": "Either the age of onset, range of approximate age or descriptive string can be recorded.  For conditions with multiple occurrences, this describes the first known occurrence.",
-              "$ref": "Period.schema.json#/definitions/Period"
+              "$ref": "Period#/definitions/Period"
             },
             "onsetString": {
               "description": "Either the age of onset, range of approximate age or descriptive string can be recorded.  For conditions with multiple occurrences, this describes the first known occurrence.",
@@ -247,13 +247,13 @@
             },
             "_onsetString": {
               "description": "Extensions for onsetString",
-              "$ref": "Element.schema.json#/definitions/Element"
+              "$ref": "Element#/definitions/Element"
             },
             "note": {
               "description": "An area where general notes can be placed about this specific condition.",
               "type": "array",
               "items": {
-                "$ref": "Annotation.schema.json#/definitions/Annotation"
+                "$ref": "Annotation#/definitions/Annotation"
               }
             }
           },

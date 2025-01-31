@@ -389,6 +389,10 @@
       "base": "https://schema.humancellatlas.org",
       "path": "./vendor/hca-metadata-5-0-0/json_schema"
     },
+    "humancellatlas/metadata/v4.6.1": {
+      "base": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema",
+      "path": "./vendor/hca-metadata-4-6-1/json_schema"
+    },
     "dats/v1.0.0": {
       "base": "https://w3id.org/dats/schema",
       "path": "./vendor/dats-1-0-0"

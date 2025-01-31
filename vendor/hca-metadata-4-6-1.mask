@@ -1,0 +1,14 @@
+docs/
+examples/
+json_schema/README.md
+json_schema_extensions/
+schema_test_files/
+src/
+.travis.yml
+changelog.md
+contributing.md
+README.md
+requirements.txt
+json_meta_schema/
+schema_tests/
+spreadsheet/

@@ -393,13 +393,9 @@
       "base": "http://hl7.org/fhir/json-schema",
       "path": "./vendor/fhir/hl7.fhir.rX/hl7.fhir.r3.core/package/openapi"
     },
-    "asyncapi/common": {
-      "base": "http://asyncapi.com/definitions",
-      "path": "./vendor/asyncapi/common"
-    },
-    "asyncapi/extensions": {
-      "base": "http://asyncapi.com/extensions",
-      "path": "./vendor/asyncapi/extensions"
+    "asyncapi": {
+      "base": "http://asyncapi.com",
+      "path": "./vendor/asyncapi"
     }
   }
 }

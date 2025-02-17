@@ -49,4 +49,4 @@ hca-metadata-5-0-0 https://github.com/HumanCellAtlas/metadata-schema 5.0.0
 dats-1-0-0 https://github.com/datatagsuite/schema 1.0.0
 fhir https://github.com/FHIR/packages b401fbd45566006a21243a9b88f1391e32b1ed40
 asyncapi https://github.com/asyncapi/spec-json-schemas v6.8.1
-ninjs https://github.com/iptc/newsinjson v3.0
+ninjs https://github.com/iptc/newsinjson v3.0.1

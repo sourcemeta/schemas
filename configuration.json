@@ -186,6 +186,18 @@
       "email": "info@apievangelist.com",
       "github": "apis-json",
       "website": "http://apisjson.org"
+    },
+    "pb33f": {
+      "title": "Princess Beef Heavy Industries",
+      "description": "Beautiful, robust, and industrial strength developer tools and libraries. Proudly made in the USA.",
+      "github": "pb33f",
+      "website": "https://pb33f.io"
+    },
+    "pb33f/vacuum": {
+      "title": "Vacuum",
+      "description": "The world's fastest OpenAPI & Swagger linter",
+      "github": "daveshanley/vacuum",
+      "website": "https://quobix.com/vacuum"
     }
   },
   "schemas": {
@@ -430,6 +442,10 @@
     "apis-json": {
       "base": "https://github.com/apis-json/api-json/blob/develop/spec/",
       "path": "./vendor/apis-json/spec"
+    },
+    "pb33f/vacuum/v0.16.3": {
+      "base": "https://quobix.com/vacuum/schemas",
+      "path": "./vendor/vacuum-0-16-3"
     }
   }
 }

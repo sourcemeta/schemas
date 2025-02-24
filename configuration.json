@@ -179,6 +179,13 @@
       "title": "News in JSON",
       "description": "A standard the representation of news in JSON",
       "github": "iptc/newsinjson"
+    },
+    "apis-json": {
+      "title": "APIs.json",
+      "description": "The API discovery format",
+      "email": "info@apievangelist.com",
+      "github": "apis-json",
+      "website": "http://apisjson.org"
     }
   },
   "schemas": {
@@ -419,6 +426,10 @@
       "rebase": [
         { "from": "https://geojson.org/schema", "to": "/geojson/v1.0.5" }
       ]
+    },
+    "apis-json": {
+      "base": "https://github.com/apis-json/api-json/blob/develop/spec/",
+      "path": "./vendor/apis-json/spec"
     }
   }
 }

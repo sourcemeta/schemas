@@ -198,6 +198,12 @@
       "description": "The world's fastest OpenAPI & Swagger linter",
       "github": "daveshanley/vacuum",
       "website": "https://quobix.com/vacuum"
+    },
+    "serverlessworkflow": {
+      "title": "Serverless Workflow",
+      "description": "CNCF Serverless Workflow Ecosystem",
+      "github": "serverlessworkflow",
+      "website": "http://serverlessworkflow.io"
     }
   },
   "schemas": {
@@ -1086,6 +1092,10 @@
     "pb33f/vacuum/v0.0.1": {
       "base": "https://quobix.com/vacuum/schemas",
       "path": "./vendor/vacuum/v0.0.1"
+    },
+    "serverlessworkflow/v1.0.0": {
+      "base": "https://serverlessworkflow.io/schemas/1.0.0-alpha5",
+      "path": "./vendor/serverlessworkflow/v1.0.0"
     }
   }
 }

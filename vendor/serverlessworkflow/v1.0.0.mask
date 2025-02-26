@@ -1,0 +1,17 @@
+.ci/
+.vscode/
+community/
+ctk/
+examples/
+media/
+use-cases/
+code-of-conduct.md
+contributing.md
+dsl-reference.md
+dsl.md
+GOVERNANCE.md
+MAINTAINERS.md
+Makefile
+owners.md
+README.md
+SECURITY.md

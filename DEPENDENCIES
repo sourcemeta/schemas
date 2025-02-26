@@ -214,3 +214,11 @@ vacuum/v0.0.3 https://github.com/daveshanley/vacuum v0.0.3
 vacuum/v0.0.2 https://github.com/daveshanley/vacuum v0.0.2
 vacuum/v0.0.1 https://github.com/daveshanley/vacuum v0.0.1
 serverlessworkflow/v1.0.0 https://github.com/serverlessworkflow/specification v1.0.0
+serverlessworkflow/v0.9.0-core https://github.com/serverlessworkflow/specification v0.9.0
+serverlessworkflow/v0.9.0-extensions https://github.com/serverlessworkflow/specification v0.9.0
+serverlessworkflow/v0.8.0 https://github.com/serverlessworkflow/specification v0.8
+serverlessworkflow/v0.7.0 https://github.com/serverlessworkflow/specification v0.7
+serverlessworkflow/v0.6.0-core https://github.com/serverlessworkflow/specification v0.6
+serverlessworkflow/v0.6.0-extensions https://github.com/serverlessworkflow/specification v0.6
+serverlessworkflow/v0.5.0-core https://github.com/serverlessworkflow/specification v0.5
+serverlessworkflow/v0.5.0-extensions https://github.com/serverlessworkflow/specification v0.5

@@ -1096,6 +1096,38 @@
     "serverlessworkflow/v1.0.0": {
       "base": "https://serverlessworkflow.io/schemas/1.0.0-alpha5",
       "path": "./vendor/serverlessworkflow/v1.0.0"
+    },
+    "serverlessworkflow/v0.9.0": {
+      "base": "https://serverlessworkflow.io/schemas/0.9",
+      "path": "./vendor/serverlessworkflow/v0.9.0-core"
+    },
+    "serverlessworkflow/v0.9.0/extensions": {
+      "base": "https://serverlessworkflow.io/schemas/0.8/extensions",
+      "path": "./vendor/serverlessworkflow/v0.9.0-extensions"
+    },
+    "serverlessworkflow/v0.8.0": {
+      "base": "https://serverlessworkflow.io/schemas/0.8",
+      "path": "./vendor/serverlessworkflow/v0.8.0"
+    },
+    "serverlessworkflow/v0.7.0": {
+      "base": "https://serverlessworkflow.io/schemas/0.7",
+      "path": "./vendor/serverlessworkflow/v0.7.0"
+    },
+    "serverlessworkflow/v0.6.0": {
+      "base": "https://serverlessworkflow.org/core/0.6",
+      "path": "./vendor/serverlessworkflow/v0.6.0-core"
+    },
+    "serverlessworkflow/v0.6.0/extensions": {
+      "base": "https://serverlessworkflow.org/extensions/0.6",
+      "path": "./vendor/serverlessworkflow/v0.6.0-extensions"
+    },
+    "serverlessworkflow/v0.5.0": {
+      "base": "https://serverlessworkflow.org/core/0.5",
+      "path": "./vendor/serverlessworkflow/v0.5.0-core"
+    },
+    "serverlessworkflow/v0.5.0/extensions": {
+      "base": "https://serverlessworkflow.org/extensions/0.5",
+      "path": "./vendor/serverlessworkflow/v0.5.0-extensions"
     }
   }
 }

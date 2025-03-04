@@ -46,6 +46,7 @@ geojson-1-0-2 https://github.com/geojson/schema v1.0.2
 geojson-1-0-1 https://github.com/geojson/schema v1.0.1
 geojson-1-0-0 https://github.com/geojson/schema v1.0.0
 hca-metadata-5-0-0 https://github.com/HumanCellAtlas/metadata-schema 5.0.0
+hca-metadata-4-6-1 https://github.com/HumanCellAtlas/metadata-schema 4.6.1
 dats-1-0-0 https://github.com/datatagsuite/schema 1.0.0
 fhir https://github.com/FHIR/packages b401fbd45566006a21243a9b88f1391e32b1ed40
 asyncapi https://github.com/asyncapi/spec-json-schemas v6.8.1

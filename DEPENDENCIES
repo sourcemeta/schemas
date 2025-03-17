@@ -26,7 +26,7 @@ manfred-mac-0-5 https://github.com/getmanfred/mac v0.5
 manfred-mac-0-4 https://github.com/getmanfred/mac v0.4
 manfred-mac-0-3 https://github.com/getmanfred/mac v0.3
 movielabs-omc-2-6 https://github.com/MovieLabs/OMC v2.6-release-1
-krakend https://github.com/krakend/krakend-schema 7e90018148f7e0d063b077fd18e3d94723817761
+krakend https://github.com/krakend/krakend-schema 00759f753b32a2eb765be79200383ec54dc907d0
 octue-power-curve https://github.com/octue/power-curve-schema 1.0.0.alpha-1
 usnistgov-mgi-2022-08 https://github.com/usnistgov/mgi-json-schema e5e6aaf3f5eae0d15b88ecbd57f44cc28b035f11
 cloudevents-1-0-0 https://github.com/cloudevents/spec v1.0

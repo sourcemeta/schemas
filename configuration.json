@@ -453,6 +453,10 @@
       "base": "https://github.com/apis-json/api-json/blob/develop/spec/",
       "path": "./vendor/apis-json/spec"
     },
+    "pb33f/vacuum/v0.16.4": {
+      "base": "https://quobix.com/vacuum/schemas",
+      "path": "./vendor/vacuum/v0.16.4"
+    },
     "pb33f/vacuum/v0.16.3": {
       "base": "https://quobix.com/vacuum/schemas",
       "path": "./vendor/vacuum/v0.16.3"

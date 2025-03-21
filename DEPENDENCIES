@@ -52,6 +52,7 @@ fhir https://github.com/FHIR/packages b401fbd45566006a21243a9b88f1391e32b1ed40
 asyncapi https://github.com/asyncapi/spec-json-schemas v6.8.1
 ninjs https://github.com/iptc/newsinjson v3.0.1
 apis-json https://github.com/apis-json/api-json 0f64ef6a17a01f54d6bf8e67e001aec9d4bd6b27
+vacuum/v0.16.4 https://github.com/daveshanley/vacuum v0.16.4
 vacuum/v0.16.3 https://github.com/daveshanley/vacuum v0.16.3
 vacuum/v0.16.3 https://github.com/daveshanley/vacuum v0.16.3
 vacuum/v0.16.2 https://github.com/daveshanley/vacuum v0.16.2

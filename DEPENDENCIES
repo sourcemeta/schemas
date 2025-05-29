@@ -225,3 +225,4 @@ serverlessworkflow/v0.6.0-core https://github.com/serverlessworkflow/specificati
 serverlessworkflow/v0.6.0-extensions https://github.com/serverlessworkflow/specification v0.6
 serverlessworkflow/v0.5.0-core https://github.com/serverlessworkflow/specification v0.5
 serverlessworkflow/v0.5.0-extensions https://github.com/serverlessworkflow/specification v0.5
+sony-x590/v1.0.0 https://github.com/sony/x590schema v1.0.0

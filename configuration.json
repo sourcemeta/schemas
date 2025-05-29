@@ -204,6 +204,17 @@
       "description": "CNCF Serverless Workflow Ecosystem",
       "github": "serverlessworkflow",
       "website": "http://serverlessworkflow.io"
+    },
+    "sony": {
+      "title": "Sony",
+      "description": "Sony Group Corporation",
+      "github": "sony",
+      "website": "https://www.sony.com"
+    },
+    "sony/x590": {
+      "title": "X590 Schema",
+      "description": "A JSON Schema for X.590, the ITU-T standard for a JSON Signature Scheme (JSS)",
+      "github": "sony/x590schema"
     }
   },
   "schemas": {
@@ -1140,6 +1151,10 @@
     "serverlessworkflow/v0.5.0/extensions": {
       "base": "https://serverlessworkflow.org/extensions/0.5",
       "path": "./vendor/serverlessworkflow/v0.5.0-extensions"
+    },
+    "sony/x590/v1.0.0": {
+      "base": "https://www.sony.com",
+      "path": "./vendor/sony-x590/v1.0.0"
     }
   }
 }

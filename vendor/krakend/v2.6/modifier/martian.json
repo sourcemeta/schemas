@@ -358,6 +358,12 @@
         "scope"
       ],
       "properties": {
+        "header": {
+          "title": "Header",
+          "description": "The header name you want to use to save the ID. In the case the header is already set, the header is unmodified.",
+          "default": "X-Krakend-Id",
+          "type": "string"
+        },
         "scope": {
           "title": "Scope",
           "description": "Scopes in which this modifier acts",
@@ -378,7 +384,7 @@
       ],
       "properties": {
         "name": {
-          "description": "Value of the header you want to set",
+          "description": "Name of the header you want to set",
           "type": "string"
         },
         "scope": {
@@ -398,7 +404,7 @@
           ]
         },
         "value": {
-          "description": "Name of the header you want to set",
+          "description": "Value of the header you want to set",
           "type": "string"
         }
       }

@@ -10,7 +10,8 @@
     "icon": "github"
   },
   "analytics": {
-    "plausible": "schemas.sourcemeta.com"
+    "plausible": "schemas.sourcemeta.com",
+    "telemetrydeck": "BBDECA33-5DA2-4309-B092-7EFC3D803B81"
   },
   "pages": {
     "nasa": {

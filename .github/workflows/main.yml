@@ -38,7 +38,7 @@ jobs:
           environment: production
 
       - id: deploy
-        uses: unikraft/kraftkit@v0.9.1
+        uses: unikraft/kraftkit@v0.11.6
         with:
           auths: |
             github.com:

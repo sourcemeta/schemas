@@ -43,7 +43,8 @@ prepare: \
 
 .PHONY: index
 index: configuration.json
-	$(REGISTRY)/sourcemeta-registry-index $< $(OUTPUT)
+	SOURCEMETA_REGISTRY_I_HAVE_A_COMMERCIAL_LICENSE=1 \
+		$(REGISTRY)/sourcemeta-registry-index $< $(OUTPUT)
 
 .PHONY: clean
 clean:

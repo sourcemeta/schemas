@@ -5,5 +5,3 @@ labels:
   cloud.unikraft.v1.instances/scale_to_zero.policy: "on"
   cloud.unikraft.v1.instances/scale_to_zero.cooldown_time_ms: 5000
 cmd: [ "/usr/bin/sourcemeta-registry-server", "/app/index" ]
-env:
-  SOURCEMETA_REGISTRY_I_HAVE_A_COMMERCIAL_LICENSE: 1

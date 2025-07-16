@@ -8,15 +8,12 @@ REGISTRY ?= ../registry/build/dist/bin
 BUILD ?= ./build
 OUTPUT ?= $(BUILD)/registry
 
-ifeq ($(shell uname), Darwin)
-LDD ?= otool -L
-else
-LDD ?= ldd
-endif
-
 .PHONY: all
-all: prepare index
-	$(REGISTRY)/sourcemeta-registry-server $(OUTPUT)
+all: configuration.json prepare
+	SOURCEMETA_REGISTRY_I_HAVE_A_COMMERCIAL_LICENSE=1 \
+		$(REGISTRY)/sourcemeta-registry-index $< $(OUTPUT)
+	SOURCEMETA_REGISTRY_I_HAVE_A_COMMERCIAL_LICENSE=1 \
+		$(REGISTRY)/sourcemeta-registry-server $(OUTPUT)
 
 define geojson_prepare
 $(BUILD)/geojson-$(1)/%.json: vendor/geojson-$(1)/bin/format.js vendor/geojson-$(1)/src/schema/%.js
@@ -38,13 +35,6 @@ prepare: \
 	$(patsubst vendor/geojson-1-0-2/src/schema/%.js,$(BUILD)/geojson-1-0-2/%.json,$(wildcard vendor/geojson-1-0-2/src/schema/*.js)) \
 	$(patsubst vendor/geojson-1-0-1/src/schema/%.js,$(BUILD)/geojson-1-0-1/%.json,$(wildcard vendor/geojson-1-0-1/src/schema/*.js)) \
 	$(patsubst vendor/geojson-1-0-0/src/schema/%.js,$(BUILD)/geojson-1-0-0/%.json,$(wildcard vendor/geojson-1-0-0/src/schema/*.js))
-	$(LDD) $(REGISTRY)/sourcemeta-registry-index
-	$(LDD) $(REGISTRY)/sourcemeta-registry-server
-
-.PHONY: index
-index: configuration.json
-	SOURCEMETA_REGISTRY_I_HAVE_A_COMMERCIAL_LICENSE=1 \
-		$(REGISTRY)/sourcemeta-registry-index $< $(OUTPUT)
 
 .PHONY: clean
 clean:

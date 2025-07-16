@@ -9,7 +9,11 @@ RUN apt-get --yes update && apt-get install --yes --no-install-recommends make n
 COPY configuration.json /app/configuration.json
 COPY vendor /app/vendor
 COPY Makefile /app/Makefile
-RUN make -C /app prepare index REGISTRY=/usr/bin OUTPUT=/app/index
+RUN make -C /app prepare
+RUN ldd /usr/bin/sourcemeta-registry-index
+RUN ldd /usr/bin/sourcemeta-registry-server
+ENV SOURCEMETA_REGISTRY_I_HAVE_A_COMMERCIAL_LICENSE 1
+RUN /usr/bin/sourcemeta-registry-index /app/configuration.json /app/index
 
 FROM scratch
 COPY --from=builder /usr/bin/sourcemeta-registry-server \

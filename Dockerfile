@@ -1,4 +1,4 @@
-FROM ghcr.io/sourcemeta/registry-enterprise:v1.2.0 AS builder
+FROM ghcr.io/sourcemeta/registry-enterprise:v1.1.0 AS builder
 
 # (1) Install dependencies required for the setup of this specific repository
 RUN apt-get --yes update && apt-get install --yes --no-install-recommends curl ca-certificates
